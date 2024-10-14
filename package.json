@@ -1,0 +1,20 @@
+{
+  "name": "card",
+  "version": "1.0.0",
+  "description": "Карточка товара",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browsersync": "^0.0.1-security",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^3.0.0",
+    "rename": "^1.0.4",
+    "sass": "^1.79.5"
+  }
+}
