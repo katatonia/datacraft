@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    max-width: 600px;
+    max-width: 400px;
     margin: auto;
     overflow: hidden;
 }
@@ -26,17 +26,32 @@ img {
 button {
     position: absolute;
     top: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
     transform: translateY(-50%);
-    width: 3.5rem;
-    height: 3.5rem;
-    border: 1px solid rgba(0, 0, 0, .5);
-    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.prev,
+.next {
+    fill: $white;
+    width: 60px;
+    height: 60px;
 }
 
 .prev {
-    left: 10px;
+    left: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .next {
-    right: 10px;
+    right: -100px;
+}
+
+button.disabled {
+    opacity: .3;
+    pointer-events: none;
 }
