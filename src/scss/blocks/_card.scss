@@ -4,25 +4,21 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1rem 0;
-	max-width: 800px;
-	margin: 200px auto;
-	padding: 40px;
+	margin: 12rem auto;
+	padding: 4rem 2.5rem;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
 	backdrop-filter: blur(5px);
 
 	&__title {
-		margin-bottom: 1.5625rem;
+		margin-bottom: 8rem;
 		text-align: center;
 	}
 
-	&__list {
-		width: 100%;
-		max-width: 600px;
-		margin-top: 3rem;
-		padding: 1rem 0;
-		border-top: 1px solid $white;
-		padding: 1rem;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: minmax(400px, 900px) minmax(280px, 650px);
+		gap: 6rem;
 	}
 
 	&__list-item {
@@ -42,7 +38,7 @@
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		max-width: 600px;
+		max-width: 1200px;
 	}
 
 	&__reviews-title {

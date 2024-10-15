@@ -1,12 +1,13 @@
 .slider {
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     overflow: hidden;
 }
 
 .slider__wrapper {
     position: relative;
+    display: flex;
 }
 
 .slides {
@@ -23,15 +24,15 @@ img {
     display: block;
 }
 
-button {
+.slider-button {
     position: absolute;
     top: 50%;
     width: 1.5rem;
     height: 1.5rem;
     transform: translateY(-50%);
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 .prev,
@@ -42,13 +43,13 @@ button {
 }
 
 .prev {
-    left: -100px;
+    left: 40px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .next {
-    right: -100px;
+    right: 40px;
 }
 
 button.disabled {

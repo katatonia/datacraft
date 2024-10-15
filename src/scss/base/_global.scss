@@ -13,9 +13,10 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url("../../img/Screenshot 2024-10-15 at 10.34.37.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../../img/bg.jpg");
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .main {
