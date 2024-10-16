@@ -17,12 +17,6 @@
 		text-align: center;
 	}
 
-	&__content {
-		display: grid;
-		grid-template-columns: minmax(400px, 900px) minmax(280px, 650px);
-		gap: 6rem;
-	}
-
 	&__list-item {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
