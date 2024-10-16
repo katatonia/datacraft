@@ -1,12 +1,16 @@
 .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 200px 0;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: white;
-	backdrop-filter: blur(5px);
+	background-color: $white;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 200px 0;
+		background-color: $white;
+		color: $black;
+		backdrop-filter: blur(5px);
+	}
 
 	&__title {
 		margin-bottom: 8rem;
