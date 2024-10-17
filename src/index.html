@@ -22,13 +22,19 @@
         <header class="header header__main">
             <div class="header__wrapper">
                 <div class="container">
-                    <ul class="menu">
-                        <li class="menu__left">
-                        <li class="menu__link">
-                            <a href="#">Главная</a>
-                        </li>
-                        <li class="menu__link menu__link_dropdown menu__link_dropdown">Каталог
-                            <ul class="menu__dropdown">
+                    <button class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="menu menu_opened">
+                        <div class="menu__left">
+                            <div class="menu__link">
+                                <a href="index.html">Главная</a>
+                            </div>
+                            <div class="menu__link menu__link_dropdown menu__link_dropdown">
+                                <a href="">Каталог</a>
+                                <!-- <ul class="menu__dropdown">
                                     <li>
                                         <a href="#">Школа пивоварения</a>
                                     </li>
@@ -44,25 +50,24 @@
                                     <li>
                                         <a href="#">Пивоварни</a>
                                     </li>
-                                </ul>
-                        </li>
-                        </li>
-                        <li class="menu__center">
+                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="menu__center">
                             <a class="menu__logo" href="#">
                                 <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
                             </a>
-                        </li>
-                        <li class="menu__right">
-                        <li class="menu__link">Избранное</li>
-                        <li class="menu__link">Войти</li>
-
-                        </li>
-                    </ul>
-                    <div class="header__burger">
-                        <span></span>
+                        </div>
+                        <div class="menu__right">
+                            <div class="menu__link">
+                                <a href="">Избранное</a>
+                            </div>
+                            <div class="menu__link">
+                                <a href="">Войти</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </header>
 
         <main>

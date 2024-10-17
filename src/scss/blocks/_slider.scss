@@ -1,3 +1,5 @@
+@use 'base/variables';
+
 .slider {
     position: relative;
     max-width: 600px;
@@ -38,7 +40,7 @@ img {
 
 .prev,
 .next {
-    fill: $black;
+    fill: variables.$black;
     width: 60px;
     height: 60px;
 }

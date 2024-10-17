@@ -1,5 +1,7 @@
+@use 'base/variables';
+
 .footer {
-    background-color: $black;
+    background-color: variables.$black;
     padding: 2rem;
 
     &__logo img {

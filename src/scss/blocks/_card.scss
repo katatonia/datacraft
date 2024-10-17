@@ -1,10 +1,12 @@
+@use 'base/variables';
+
 .card {
-	background-color: $white;
+	background-color: variables.$white;
 
 	&__wrapper {
 		display: grid;
 		padding: 200px 0;
-		color: #000;
+		color: variables.$black;
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -35,7 +37,7 @@
 
 	&__reviews-title {
 		padding-bottom: 10px;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid variables.$white;
 		width: 100%;
 		text-align: center;
 	}
@@ -47,8 +49,8 @@
 		cursor: pointer;
 		text-transform: uppercase;
 		font-weight: 400;
-		border: 1px solid $white;
-		color: $white;
+		border: 1px solid variables.$white;
+		color: variables.$white;
 		border-radius: 5px;
 		text-align: center;
 		margin-top: 2.5rem;
@@ -61,10 +63,10 @@
 		}
 
 		&:hover {
-			background-color: $white;
+			background-color: variables.$white;
 
 			span {
-				color: $black;
+				color: variables.$black;
 			}
 		}
 	}

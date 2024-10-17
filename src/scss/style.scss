@@ -1,14 +1,14 @@
 // base
-@import "base/variables";
-@import "base/global";
-@import "base/reboot";
-@import "base/fonts";
+@use "base/variables";
+@use "base/global";
+@use "base/reboot";
+@use "base/fonts";
 
 // blocks
-@import "blocks/header";
-@import "blocks/menu";
-@import "blocks/card";
-@import "blocks/slider";
-@import "blocks/reviews";
-@import "blocks/footer";
+@use "blocks/header";
+@use "blocks/menu";
+@use "blocks/card";
+@use "blocks/slider";
+@use "blocks/reviews";
+@use "blocks/footer";
 
