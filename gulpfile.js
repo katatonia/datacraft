@@ -1,13 +1,13 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import sass from 'gulp-sass';
-import sassCompiler from 'sass'; // Импортируем компилятор Sass
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass'; // Импортируем Dart Sass
 import rename from 'gulp-rename';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCss from 'gulp-clean-css';
 
-// Инициализируем gulp-sass с компилятором
-const compileSass = sass(sassCompiler);
+// Инициализируем gulp-sass с компилятором Dart Sass
+const compileSass = gulpSass(dartSass);
 
 // Server
 gulp.task('server', function() {
@@ -40,4 +40,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+
 

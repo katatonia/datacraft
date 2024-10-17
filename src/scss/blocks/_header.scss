@@ -1,7 +1,13 @@
 .header {
-    background-image: url("../img/bg.jpg");
-    height: 100vh;
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
+    &__main {
+        background-image: url("../img/bg.jpg");
+        height: 100vh;
+        background-position: 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+        background-color: rgba(0, 0, 0, .5);
+    }
 }

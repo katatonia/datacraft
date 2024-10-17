@@ -8,6 +8,7 @@
 .slider__wrapper {
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
 .slides {
@@ -37,7 +38,7 @@ img {
 
 .prev,
 .next {
-    fill: $white;
+    fill: $black;
     width: 60px;
     height: 60px;
 }
@@ -55,4 +56,9 @@ img {
 button.disabled {
     opacity: .3;
     pointer-events: none;
+}
+
+.slider__desc {
+    text-align: center;
+    margin-top: 40px;
 }

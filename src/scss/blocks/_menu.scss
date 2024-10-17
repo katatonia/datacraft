@@ -1,20 +1,20 @@
 .menu {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     padding: 2.5rem;
 
-	&__logo img {
-		display: block;
-		max-width: 250px;
+    &__logo img {
+        display: block;
+        max-width: 25rem;
         width: 100%;
-		height: auto;
-	}
+        height: 6.25rem;
+    }
 
-	&__link {
-		font-size: 24px;
-        transition: .3s;
+    &__link {
         position: relative;
+        font-size: 2.1875rem;
+        transition: .3s;
         padding: 1.5rem;
         cursor: pointer;
 
@@ -32,23 +32,46 @@
 
         &:hover::after {
             transform: scaleX(1);
-          }
+        }
     }
 
-	&__center {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-	&__left,
-	&__right {
-		display: flex;
-		align-items: center;
-		gap: 3rem;
-	}
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
 
-	&__right {
-		justify-content: flex-end;
-	}
+    &__right {
+        justify-content: flex-end;
+    }
+
+    &__dropdown {
+        display: none;
+
+		&__li {
+			cursor: pointer;
+		}
+    }
+
+    &__link_dropdown:hover .menu__dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+		left: 0;
+        padding: 2rem;
+        color: $white;
+        background-color:$black;
+		font-size: 1.5rem;
+		gap: 1rem;
+    }
 }
+
+
