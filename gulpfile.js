@@ -1,12 +1,12 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import gulpSass from 'gulp-sass';
-import dartSass from 'sass'; // Импортируем Dart Sass
+import dartSass from 'sass';
 import rename from 'gulp-rename';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCss from 'gulp-clean-css';
 
-// Инициализируем gulp-sass с компилятором Dart Sass
+// Инициализируем gulp-sass с Dart Sass
 const compileSass = gulpSass(dartSass);
 
 // Server
@@ -22,10 +22,7 @@ gulp.task('server', function() {
 gulp.task('styles', function() {
     return gulp.src('src/scss/**/*.+(scss|sass)')
         .pipe(compileSass({ outputStyle: 'compressed' }).on('error', compileSass.logError))
-        .pipe(rename({
-            prefix: '',
-            suffix: '.min',
-        }))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(autoprefixer())
         .pipe(cleanCss({ compatibility: 'ie8' }))
         .pipe(gulp.dest('src/css'))
@@ -40,5 +37,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+
 
 

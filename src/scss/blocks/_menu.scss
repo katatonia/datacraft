@@ -2,20 +2,17 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem;
 
-    &__logo img {
+    &__logo {
         display: block;
-        max-width: 25rem;
-        width: 100%;
-        height: 6.25rem;
+        width: 270px;
     }
 
     &__link {
         position: relative;
-        font-size: 2.1875rem;
+        // font-size: 2.1875rem;
         transition: .3s;
-        padding: 1.5rem;
+        padding: 4rem;
         cursor: pointer;
 
         &::after {
@@ -23,7 +20,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 3rem;
             height: 2px;
             background: $white;
             transform: scaleX(0);
@@ -68,10 +65,12 @@
 		left: 0;
         padding: 2rem;
         color: $white;
-        background-color:$black;
-		font-size: 1.5rem;
-		gap: 1rem;
+        background-color: rgba(0, 0, 0, .5);
+		font-size: 2rem;
+		gap: 2rem;
     }
 }
 
-
+.menu__link {
+    font-size: 2.1875rem;
+}
