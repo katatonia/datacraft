@@ -2,8 +2,10 @@
 
 $white: #fff;
 $black: #000;
-$lightgrey: #d3d3d3;
 
-// sizes
-$h1: 2.125rem;
-$h2: 1.3125rem;
+// viewport
+$vp-360: 360px - 1px;
+$vp-768: 768px - 1px;
+$vp-1024: 1024px - 1px;
+$vp-1366: 1366px - 1px;
+$vp-1680: 1680px - 1px;
