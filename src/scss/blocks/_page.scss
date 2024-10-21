@@ -1,6 +1,7 @@
 .page {
     &__main {
         position: relative;
+        height: 100vh;
     }
 
     &__bg {
@@ -14,5 +15,10 @@
     &__wrapper {
         position: relative;
         z-index: 2;
+
+        p {
+            padding-top: 30rem;
+            font-size: 2rem;
+        }
     }
 }

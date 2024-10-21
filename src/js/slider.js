@@ -1,9 +1,9 @@
 let currentSlide = 0;
 
 const showSlide = (index) => {
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    const slides = document.querySelectorAll('.slider__slide');
+    const prevButton = document.querySelector('.slider__button_prev');
+    const nextButton = document.querySelector('.slider__button_next');
 
     if (index >= slides.length) {
         currentSlide = 0;
@@ -14,17 +14,7 @@ const showSlide = (index) => {
     }
 
     const offset = -currentSlide * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-
-    // Скрыть кнопку "назад" на первом слайде
-    prevButton.style.display = currentSlide === 0 ? 'none' : 'block';
-    // Отключить кнопку "вперед", если это не первый слайд
-
-    if (currentSlide === slides.length - 1) {
-        nextButton.classList.add('disabled');
-    } else {
-        nextButton.classList.remove('disabled');
-    }
+    document.querySelector('.slider__slides').style.transform = `translateX(${offset}%)`;
 };
 
 // Функция для переключения слайдов
@@ -34,4 +24,3 @@ const moveSlide = (step) => {
 
 // Показать первый слайд
 showSlide(currentSlide);
-

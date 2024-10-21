@@ -19,150 +19,155 @@
 <body>
     <div class="wrapper">
 
-        <header class="header header__main">
-            <div class="header__wrapper">
-                <div class="container">
-                    <div class="menu">
-                        <div class="menu__left">
-                            <div class="menu__link">
-                                <a href="index.html">Главная</a>
-                            </div>
-                            <div class="menu__link menu__link_dropdown menu__link_dropdown">
-                                <a href="">Каталог</a>
-                                <!-- <ul class="menu__dropdown">
-                                    <li>
-                                        <a href="#">Школа пивоварения</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Категории</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Вкусы</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Локация</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Пивоварни</a>
-                                    </li>
-                                </ul> -->
-                            </div>
-                        </div>
-                        <div class="menu__center">
-                            <a class="menu__logo" href="#">
-                                <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
-                            </a>
-                        </div>
-                        <div class="menu__right">
-                            <div class="menu__link">
-                                <a href="">Избранное</a>
-                            </div>
-                            <div class="menu__link">
-                                <a href="">Войти</a>
-                            </div>
-                        </div>
-                        <div class="header__burger">
-                            <span></span>
-                        </div>
-                    </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a class="header__logo" href="#">
+                        <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
+                    </a>
+                    <button class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li>
+                                <a class="header__link" href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a class="header__link header__link_dropdown" href="catalog.html">Каталог</a>
+                            </li>
+                            <li>
+                                <a class="header__link" href="#">Избранное</a>
+                            </li>
+                            <li>
+                                <a class="header__link" href="#">Войти</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
         </header>
 
-        <main>
-            <div class="card">
-                <div class="container">
-                    <div class="card__wrapper">
-                        <div class="slider__wrapper">
+
+        <main class="page">
+            <section class="card">
+                <div class="card__bg">
+                    <div class="container">
+                        <div class="card__wrapper">
                             <div class="slider">
-                                <h2 class="card__title h2">Essenbach</h2>
-                                <div class="slides">
-                                    <div class="slide active">
-                                        <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                <div class="slider__wrapper">
+                                    <h2 class="slider__title">Essenbach
+                                        <div class="slider__icons">
+                                            <img class="slider__heart" width="60" height="60" src="icons/heart.svg"
+                                                alt="#">
+                                            <img width="60" height="60" src="img/qr.png" alt="#">
+                                        </div>
+                                    </h2>
+                                    <span class="slider__subtitle">Пшеничное пиво (Wheat beer)</span>
+                                    <div class="slider__slides">
+                                        <div class="slider__slide active">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
+                                        </div>
                                     </div>
-                                    <div class="slide">
-                                        <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
+                                    <div class="slider__btns">
+                                        <button class="slider__button slider__button_next" onclick="moveSlide(-1)">
+                                            <img class="slider__img-1" width="150" height="150" src="img/essenbach.jpg"
+                                                alt="#">
+                                        </button>
+                                        <button class="slider__button slider__button_prev" onclick="moveSlide(1)">
+                                            <img class="slider__img-2" width="150" height="150"
+                                                src="img/wheat-field.jpg" alt="#">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="slider-button prev" onclick="moveSlide(-1)">
-                                <svg class="prev" viewBox="0 0 60 60" width="60" height="60">
-                                    <use xlink:href="icons/sprite.svg#prev"></use>
-                                </svg>
-                            </button>
-                            <button class="slider-button next" onclick="moveSlide(1)">
-                                <svg class="prev" viewBox="0 0 60 60" width="60" height="60">
-                                    <use xlink:href="icons/sprite.svg#next"></use>
-                                </svg>
-                            </button>
-                            <p class="slider__desc">Классический Пшеничный Эль Essenbach не спроста носит
-                                своё
-                                имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                изменили,
-                                рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                перемешивающимися с
-                                пряно-пшеничной базой напитка.
-                            </p>
+                            <div class="card__about">
+                                <div class="card__brew">
+                                    <span>Plague Brew</span>
+                                    <img width="100" height="100" src="img/plague-brew.jpg" alt="#">
+                                </div>
+                                <p class="card__desc">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <div class="card__beer-desc">
+                                    <ul class="card__style-list">
+                                        <li>
+                                            <span class="card__style-list-title">Имя</span>
+                                            <span class="card__style-list-text">Essenbach</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__style-list-title">Школа пивоварения</span>
+                                            <span class="card__style-list-text">Plague Brew</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__style-list-title">Направление</span>
+                                            <span class="card__style-list-text">Классика</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="card__style-list">
+                                        <li>
+                                            <span class="card__style-list-title">Подстиль</span>
+                                            <span class="card__style-list-text">Дрожжевое пшеничное (Hefeweizen)</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__style-list-title">Категория</span>
+                                            <span class="card__style-list-text">Светлое, Эль, Пшеничное, Лёгкое</span>
+                                        </li>
+                                        <li>
+                                            <span class="card__style-list-title">Вкус</span>
+                                            <span class="card__style-list-text">Солодовый, Пшеничный, Хлебный, Пряный,
+                                                Фруктовый</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__bottom">
+                                    <ul class="card__beer-profile">
+                                        <li class="card__beer-profile-item">
+                                            <span>ABV</span>
+                                            <span>5</span>
+                                        </li>
+                                        <li class="card__beer-profile-item">
+                                            <span>OG</span>
+                                            <span>13</span>
+                                        </li>
+                                        <li class="card__beer-profile-item">
+                                            <span>IBU</span>
+                                            <span>10</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="card__rate">
+                                        <li class="card__rate-item">
+                                            <span>Рейтинг</span>
+                                            <span>3.68</span>
+                                        </li>
+                                        <li class="card__rate-item">
+                                            <span>Datacraft</span>
+                                            <span>3.68</span>
+                                        </li>
+                                        <li class="card__rate-item">
+                                            <span>Untappd</span>
+                                            <span>3.68</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="card__reviews-btn">
+                                    <span>
+                                        Читать отзывы
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                        <ul class="card__list">
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Имя</span>
-                                <span class="card__list-text">Essenbach</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Рейтинг</span>
-                                <span class="card__list-text">3.68</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Рейтинг Datacraft</span>
-                                <span class="card__list-text">Essenbach</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Школа пивоварения</span>
-                                <span class="card__list-text">Plague Brew</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Направление</span>
-                                <span class="card__list-text">Классика</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Стиль</span>
-                                <span class="card__list-text">Пшеничное пиво (Wheat Beer)</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Подстиль</span>
-                                <span class="card__list-text">Дрожжевое пшеничное (Hefeweizen)</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Категория</span>
-                                <span class="card__list-text">Светлое, Эль, Пшеничное, Лёгкое</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Вкус</span>
-                                <span class="card__list-text">Солодовый, Пшеничный, Хлебный, Пряный,
-                                    Фруктовый</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Алкоголь ABV</span>
-                                <span class="card__list-text">5</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Плотность OG</span>
-                                <span class="card__list-text">13</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Горечь IBU</span>
-                                <span class="card__list-text">10</span>
-                            </li>
-                            <li class="card__list-item">
-                                <span class="card__list-text card__list-text_name">Untappd</span>
-                                <span class="card__list-text"></span>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <!-- <div class="card__reviews">
-                            <h2 class="card__reviews-title h2">Отзывы</h2>
+                        <div class="card__reviews">
                             <ul class="reviews">
                                 <li class="reviews__comment">
                                     <div class="reviews__title">
@@ -184,7 +189,7 @@
                                     <div class="reviews__title">
                                         <span class="reviews__name">Essenbach</span>
                                         <div class="reviews__rate">
-                                            <span class="reviews__item">⭐ 5</span>
+                                            <span class="reviews__item">☆ 5</span>
                                             <span class="reviews__item"></span>
                                         </div>
                                     </div>
@@ -200,9 +205,7 @@
                                     <div class="reviews__title">
                                         <span class="reviews__name">Essenbach</span>
                                         <div class="reviews__rate">
-                                            <span class="reviews__item beer">
-                                                <img src="icons/beer.png" alt="#" width="25" height="25">
-                                            </span>
+                                            <span class="reviews__item">☆ 5</span>
                                             <span class="reviews__item"></span>
                                         </div>
                                     </div>
@@ -218,7 +221,7 @@
                                     <div class="reviews__title">
                                         <span class="reviews__name">Essenbach</span>
                                         <div class="reviews__rate">
-                                            <span class="reviews__item">⭐ ⭐ ⭐ ⭐</span>
+                                            <span class="reviews__item">☆ 4</span>
                                             <span class="reviews__item"></span>
                                         </div>
                                     </div>
@@ -431,18 +434,14 @@
                                     </div>
                                 </li>
                             </ul>
-                            <button class="card__reviews-btn">
-                                <span>
-                                    Показать больше
-                                </span>
-                            </button>
-                        </div> -->
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer class="footer">
-            <div class="container">
+            <div class="footer__body container">
                 <a class="footer__logo" href="#">
                     <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
                 </a>
@@ -450,6 +449,10 @@
         </footer>
 
     </div>
+
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/slider.js"></script>
+
 </body>
 
 </html>
