@@ -58,7 +58,11 @@ html, body {
 .container {
     max-width: 1880px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+
+    @media (max-width: variables.$vp-1366) {
+        padding: 0 20px;
+    }
 }
 
 span,

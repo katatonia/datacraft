@@ -1,0 +1,129 @@
+@use "base/variables";
+
+.catalog {
+	background-color: variables.$white;
+
+	&__wrapper {
+		padding: 15rem 5rem 12rem;
+	}
+
+	&__selects {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	&__select {
+		color: variables.$black;
+		display: flex;
+		gap: 1rem;
+
+		select {
+			border: 1px solid variables.$lightgrey;
+			padding: 5px 20px 5px 10px;
+			border-radius: 4px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+
+	&__search {
+		form {
+			display: flex;
+			gap: 1rem;
+		}
+
+		input {
+			border: 1px solid variables.$lightgrey;
+			padding: 5px 20px 5px 10px;
+			border-radius: 4px;
+		}
+
+		button {
+			padding: 10px;
+			max-width: 100px;
+			width: 100%;
+			background-color: variables.$tomato;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 500px);
+        justify-content: center;
+		column-gap: 2rem;
+		row-gap: 7rem;
+		margin-top: 5rem;
+	}
+
+	&__card {
+        color: variables.$black;
+		background-color: white;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+	}
+
+    &__heart {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        cursor: pointer;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    &__brewery {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin: 3rem 0 2rem;
+    }
+
+    &__qr {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: variables.$tomato;
+        margin: 0 auto;
+        border-radius: 5px;
+        color: variables.$white;
+        cursor: pointer;
+        margin-top: 5rem;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: flex-end;
+    }
+}

@@ -10,6 +10,8 @@
 	position: relative;
 
 	&__up-btn {
+		display: flex;
+		align-items: center;
 		content: "";
 		position: absolute;
 		bottom: 8rem;
@@ -31,6 +33,10 @@
 		gap: 4rem;
 		padding: 3rem;
 		background-color: rgba(1, 1, 1, 0.5);
+
+		@media (max-width: variables.$vp-1024) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__brew {
@@ -169,10 +175,6 @@
 
 	&__heart {
 		cursor: pointer;
-
-		&_active {
-			fill: variables.$tomato;
-		}
 	}
 
 	&__bottom {
