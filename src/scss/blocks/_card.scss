@@ -2,7 +2,7 @@
 
 .card {
 	background-color: variables.$white;
-	background-image: url("../../img/bg.jpg");
+	background-image: url("../img/bg.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -28,8 +28,8 @@
 		display: grid;
 		color: variables.$white;
 		grid-template-columns: auto 1fr;
-		gap: 8rem;
-		padding: 4rem;
+		gap: 4rem;
+		padding: 3rem;
 		background-color: rgba(1, 1, 1, 0.5);
 	}
 
