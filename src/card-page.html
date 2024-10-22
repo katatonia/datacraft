@@ -53,398 +53,406 @@
 
         <main class="page">
             <section class="card">
-                <div class="card__bg">
-                    <div class="container">
-                        <div class="card__wrapper">
-                            <div class="slider">
-                                <div class="slider__wrapper">
-                                    <h2 class="slider__title">Essenbach
-                                        <div class="slider__icons">
-                                            <img class="slider__heart" width="60" height="60" src="icons/heart.svg"
-                                                alt="#">
-                                            <img width="60" height="60" src="img/qr.png" alt="#">
-                                        </div>
-                                    </h2>
-                                    <span class="slider__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    <div class="slider__slides">
-                                        <div class="slider__slide active">
-                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                        </div>
-                                        <div class="slider__slide">
-                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                        </div>
+                <div class="card__wrapper container">
+                    <div class="card__grid">
+                        <div class="slider">
+                            <div class="slider__wrapper">
+                                <h2 class="slider__title">Essenbach
+                                    <div class="slider__icons">
+                                        <img class="slider__heart" width="60" height="60" src="icons/heart.svg" alt="#">
+                                        <img width="60" height="60" src="img/qr.png" alt="#">
                                     </div>
-                                    <div class="slider__btns">
-                                        <button class="slider__button slider__button_next" onclick="moveSlide(-1)">
-                                            <img class="slider__img-1" width="150" height="150" src="img/essenbach.jpg"
-                                                alt="#">
-                                        </button>
-                                        <button class="slider__button slider__button_prev" onclick="moveSlide(1)">
-                                            <img class="slider__img-2" width="150" height="150"
-                                                src="img/wheat-field.jpg" alt="#">
-                                        </button>
+                                </h2>
+                                <span class="slider__subtitle">Пшеничное пиво (Wheat beer)</span>
+                                <div class="slider__slides">
+                                    <div class="slider__slide active">
+                                        <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                    </div>
+                                    <div class="slider__slide">
+                                        <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card__about">
-                                <div class="card__brew">
-                                    <span>Plague Brew</span>
-                                    <img width="100" height="100" src="img/plague-brew.jpg" alt="#">
+                                <div class="slider__btns">
+                                    <button class="slider__button slider__button_next" onclick="moveSlide(-1)">
+                                        <img class="slider__img-1" width="150" height="150" src="img/essenbach.jpg"
+                                            alt="#">
+                                    </button>
+                                    <button class="slider__button slider__button_prev" onclick="moveSlide(1)">
+                                        <img class="slider__img-2" width="150" height="150" src="img/wheat-field.jpg"
+                                            alt="#">
+                                    </button>
                                 </div>
-                                <p class="card__desc">Классический Пшеничный Эль Essenbach не спроста носит
-                                    своё
-                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                    изменили,
-                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                    перемешивающимися с
-                                    пряно-пшеничной базой напитка.
-                                </p>
-                                <div class="card__beer-desc">
-                                    <ul class="card__style-list">
-                                        <li>
-                                            <span class="card__style-list-title">Имя</span>
-                                            <span class="card__style-list-text">Essenbach</span>
-                                        </li>
-                                        <li>
-                                            <span class="card__style-list-title">Школа пивоварения</span>
-                                            <span class="card__style-list-text">Plague Brew</span>
-                                        </li>
-                                        <li>
-                                            <span class="card__style-list-title">Направление</span>
-                                            <span class="card__style-list-text">Классика</span>
-                                        </li>
-                                    </ul>
-                                    <ul class="card__style-list">
-                                        <li>
-                                            <span class="card__style-list-title">Подстиль</span>
-                                            <span class="card__style-list-text">Дрожжевое пшеничное (Hefeweizen)</span>
-                                        </li>
-                                        <li>
-                                            <span class="card__style-list-title">Категория</span>
-                                            <span class="card__style-list-text">Светлое, Эль, Пшеничное, Лёгкое</span>
-                                        </li>
-                                        <li>
-                                            <span class="card__style-list-title">Вкус</span>
-                                            <span class="card__style-list-text">Солодовый, Пшеничный, Хлебный, Пряный,
-                                                Фруктовый</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card__bottom">
-                                    <ul class="card__beer-profile">
-                                        <li class="card__beer-profile-item">
-                                            <span>ABV</span>
-                                            <span>5</span>
-                                        </li>
-                                        <li class="card__beer-profile-item">
-                                            <span>OG</span>
-                                            <span>13</span>
-                                        </li>
-                                        <li class="card__beer-profile-item">
-                                            <span>IBU</span>
-                                            <span>10</span>
-                                        </li>
-                                    </ul>
-                                    <ul class="card__rate">
-                                        <li class="card__rate-item">
-                                            <span>Рейтинг</span>
-                                            <span>3.68</span>
-                                        </li>
-                                        <li class="card__rate-item">
-                                            <span>Datacraft</span>
-                                            <span>3.68</span>
-                                        </li>
-                                        <li class="card__rate-item">
-                                            <span>Untappd</span>
-                                            <span>3.68</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <button class="card__reviews-btn">
-                                    <span>
-                                        Читать отзывы
-                                    </span>
-                                </button>
                             </div>
                         </div>
-                        <div class="card__reviews">
-                            <ul class="reviews">
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 4</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">7</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Очень вкусно</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">14</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Очень вкусная пшеничка :)</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">18</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Best of the best</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 4</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">23</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Отличное вкусное легкое
-                                            пиво</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 4</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">32</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Популярные сорта</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">33</span>
-                                        <span class="reviews__item">22.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Лучшая пшеничка что я пробовал в
-                                            своем ценовом сегменте! Питко, мягко, бананчики и карамель в аромате,
-                                            пушка!</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">42</span>
-                                        <span class="reviews__item">23.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text"></span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 4</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">43</span>
-                                        <span class="reviews__item">24.08.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text"></span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">95</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text"></span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">98</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Приятное, легкое вкусное пиво,
-                                            которое приятно будет распить в кругу друзей </span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">102</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Отличная пшеничка</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">107</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Real</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">108</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Очень вкусная пшеничка</span>
-                                        <span class="reviews__fest">AA Fest</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">112</span>
-                                        <span class="reviews__item">04.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text"></span>
-                                        <span class="reviews__fest">AA Fest</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">120</span>
-                                        <span class="reviews__item">05.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text">Гуд</span>
-                                        <span class="reviews__fest">AA Fest</span>
-                                    </div>
-                                </li>
-                                <li class="reviews__comment">
-                                    <div class="reviews__title">
-                                        <span class="reviews__name">Essenbach</span>
-                                        <div class="reviews__rate">
-                                            <span class="reviews__item">☆ 5</span>
-                                            <span class="reviews__item"></span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews__date">
-                                        <span class="reviews__item">127</span>
-                                        <span class="reviews__item">07.09.2024</span>
-                                    </div>
-                                    <div class="reviews__text">
-                                        <span class="reviews__item reviews__item_text"></span>
-                                        <span class="reviews__fest">AA Feat</span>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="card__about">
+                            <div class="card__brew">
+                                <span>Plague Brew</span>
+                                <img width="100" height="100" src="img/plague-brew.jpg" alt="#">
+                            </div>
+                            <p class="card__desc">Классический Пшеничный Эль Essenbach не спроста носит
+                                своё
+                                имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                изменили,
+                                рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                перемешивающимися с
+                                пряно-пшеничной базой напитка.
+                            </p>
+                            <div class="card__beer-desc">
+                                <ul class="card__style-list">
+                                    <li>
+                                        <span class="card__style-list-title">Имя</span>
+                                        <span class="card__style-list-text">Essenbach</span>
+                                    </li>
+                                    <li>
+                                        <span class="card__style-list-title">Школа пивоварения</span>
+                                        <span class="card__style-list-text">Plague Brew</span>
+                                    </li>
+                                    <li>
+                                        <span class="card__style-list-title">Направление</span>
+                                        <span class="card__style-list-text">Классика</span>
+                                    </li>
+                                </ul>
+                                <ul class="card__style-list">
+                                    <li>
+                                        <span class="card__style-list-title">Подстиль</span>
+                                        <span class="card__style-list-text">Дрожжевое пшеничное (Hefeweizen)</span>
+                                    </li>
+                                    <li>
+                                        <span class="card__style-list-title">Категория</span>
+                                        <span class="card__style-list-text">Светлое, Эль, Пшеничное, Лёгкое</span>
+                                    </li>
+                                    <li>
+                                        <span class="card__style-list-title">Вкус</span>
+                                        <span class="card__style-list-text">Солодовый, Пшеничный, Хлебный, Пряный,
+                                            Фруктовый</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card__bottom">
+                                <ul class="card__beer-profile">
+                                    <li class="card__beer-profile-item">
+                                        <span>ABV</span>
+                                        <span>5</span>
+                                    </li>
+                                    <li class="card__beer-profile-item">
+                                        <span>OG</span>
+                                        <span>13</span>
+                                    </li>
+                                    <li class="card__beer-profile-item">
+                                        <span>IBU</span>
+                                        <span>10</span>
+                                    </li>
+                                </ul>
+                                <ul class="card__rate">
+                                    <li class="card__rate-item">
+                                        <span>Рейтинг</span>
+                                        <span>3.68</span>
+                                    </li>
+                                    <li class="card__rate-item">
+                                        <span>Datacraft</span>
+                                        <span>3.68</span>
+                                    </li>
+                                    <li class="card__rate-item">
+                                        <span>Untappd</span>
+                                        <span>3.68</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <button class="card__reviews-btn">
+                                <span>
+                                    Читать отзывы
+                                </span>
+                            </button> -->
                         </div>
                     </div>
+                    <ul class="reviews">
+                        <li class="reviews__comment">
+                            <div class="reviews__title">
+                                <span class="reviews__name">Essenbach</span>
+                                <div class="reviews__rate">
+                                    <span class="reviews__item">☆ 4</span>
+                                    <span class="reviews__item"></span>
+                                </div>
+                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                            </div>
+                            <div class="reviews__text">
+                                <span class="reviews__item reviews__item_text">Очень вкусно</span>
+                            </div>
+                        </li>
+                        <li class="reviews__comment">
+                            <div class="reviews__title">
+                                <span class="reviews__name">Essenbach</span>
+                                <div class="reviews__rate">
+                                    <span class="reviews__item">☆ 5</span>
+                                    <span class="reviews__item"></span>
+                                </div>
+                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                            </div>
+                            <div class="reviews__text">
+                                <span class="reviews__item reviews__item_text">Очень вкусная пшеничка :)</span>
+                            </div>
+                        </li>
+                        <li class="reviews__comment">
+                            <div class="reviews__title">
+                                <span class="reviews__name">Essenbach</span>
+                                <div class="reviews__rate">
+                                    <span class="reviews__item">☆ 5</span>
+                                    <span class="reviews__item"></span>
+                                </div>
+                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                            </div>
+                            <div class="reviews__text">
+                                <span class="reviews__item reviews__item_text">Best of the best</span>
+                            </div>
+                        </li>
+                        <li class="reviews__comment">
+                            <div class="reviews__title">
+                                <span class="reviews__name">Essenbach</span>
+                                <div class="reviews__rate">
+                                    <span class="reviews__item">☆ 4</span>
+                                    <span class="reviews__item"></span>
+                                </div>
+                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                            </div>
+                            <div class="reviews__text">
+                                <span class="reviews__item reviews__item_text">Отличное вкусное легкое
+                                    пиво</span>
+                            </div>
+                        </li>
+                        <li class="reviews__comment">
+                            <div class="reviews__title">
+                                <span class="reviews__name">Essenbach</span>
+                                <div class="reviews__rate">
+                                    <span class="reviews__item">☆ 4</span>
+                                    <span class="reviews__item"></span>
+                                </div>
+                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                            </div>
+                            <div class="reviews__text">
+                                <span class="reviews__item reviews__item_text">Популярные сорта</span>
+                            </div>
+                        </li>
+                        <!-- <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">22.08.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Лучшая пшеничка что я пробовал в
+                                                своем ценовом сегменте! Питко, мягко, бананчики и карамель в аромате,
+                                                пушка!</span>
+                                        </div>
+                                    </li> -->
+                        <!-- <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">23.08.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text"></span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">24.08.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 4</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text"></span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text"></span>
+                                        </div>
+                                    </li> -->
+                        <!-- <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Приятное, легкое вкусное пиво,
+                                                которое приятно будет распить в кругу друзей </span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Отличная пшеничка</span>
+                                        </div>
+                                    </li> -->
+                        <!-- <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Real</span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Очень вкусная пшеничка</span>
+                                            <span class="reviews__fest">AA Fest</span>
+                                        </div>
+                                    </li> -->
+                        <!-- <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">04.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text"></span>
+                                            <span class="reviews__fest">AA Fest</span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">05.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text">Гуд</span>
+                                            <span class="reviews__fest">AA Fest</span>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__comment">
+                                        <div class="reviews__date">
+                                            <span class="reviews__item">07.09.2024</span>
+                                        </div>
+                                        <div class="reviews__title">
+                                            <span class="reviews__name">Essenbach</span>
+                                            <div class="reviews__rate">
+                                                <span class="reviews__item">☆ 5</span>
+                                                <span class="reviews__item"></span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <span class="reviews__item reviews__item_text"></span>
+                                            <span class="reviews__fest">AA Feat</span>
+                                        </div>
+                                    </li> -->
+                    </ul>
+                    <button class="card__reviews-btn card__reviews-btn_bottom">
+                        <span>
+                            Читать далее
+                        </span>
+                    </button>
                 </div>
+                <button class="card__up-btn">
+                    <img width="70" height="70" src="icons/up-btn.svg" alt="#">
+                </button>
             </section>
         </main>
 
         <footer class="footer">
             <div class="footer__body container">
-                <a class="footer__logo" href="#">
-                    <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
-                </a>
+                <div class="footer__social">
+                    <a class="footer__logo" href="#">
+                        <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
+                    </a>
+                    <div class="social">
+                        <a class="social__link" href="https://www.instagram.com/data__craft?igsh=MXV1aG9xcGdzbDF6eQ==">
+                            <img width="50" height="50" src="icons/instagram.svg" alt="#">
+                        </a>
+                        <a class="social__link" href="https://vk.com/club225696341">
+                            <img width="50" height="50" src="icons/vk.svg" alt="#">
+                        </a>
+                        <a class="social__link" href="https://t.me/datacraft78">
+                            <img width="50" height="50" src="icons/telegram.svg" alt="#">
+                        </a>
+                        <a class="social__link" href="https://www.youtube.com/@-datacraft-">
+                            <img width="50" height="50" src="icons/youtube.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <div class="contacts__connection">
+                        <a class="contacts__connection-item contacts__connection-item_phone"
+                            href="tel:+79217430075">+79217430075</a>
+                        <a class="contacts__connection-item contacts__connection-item_mail"
+                            href="mailto:info@datacraft.su">info@datacraft.su</a>
+                    </div>
+                    <div class="contacts__location">
+                        <span class="contacts__location-item">ООО «ДатаКрафт»</span>
+                        <span class="contacts__location-item">ИНН 7810997481</span>
+                        <span class="contacts__location-item">Санкт-Петербург,<br>Московское шоссе, дом 7, литера Б,
+                            помещение 1-Н</span>
+                    </div>
+                </div>
             </div>
         </footer>
 

@@ -2,24 +2,25 @@
 
 .reviews {
 	width: 100%;
+	max-width: 1200px;
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
-	margin-top: 1.5625rem;
+	margin: 5rem auto;
 
 	&__comment {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 0.625rem;
-		padding: 1rem;
-		color: variables.$black;
-		background-color: variables.$white;
+		padding: 2rem;
+		color: variables.$white;
+		background-color: rgba(0, 0, 0 , .5);
 	}
 
 	&__title {
 		display: flex;
-		gap: 3.75rem;
+		gap: 2rem;
 		font-weight: 500;
 	}
 
@@ -33,5 +34,11 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 1.25rem;
+	}
+
+	&__item {
+		&_date {
+			margin-left: auto;
+		}
 	}
 }
