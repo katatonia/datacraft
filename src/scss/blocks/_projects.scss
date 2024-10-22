@@ -1,0 +1,17 @@
+@use "base/variables";
+
+.projects {
+    background-color: variables.$white;
+
+    &__wrapper {
+        padding: 10rem 0;
+    }
+
+    &__list {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

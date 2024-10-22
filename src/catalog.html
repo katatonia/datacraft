@@ -19,7 +19,8 @@
 <body>
     <div class="wrapper">
 
-        <header class="header">
+
+        <header class="header header_index">
             <div class="container">
                 <div class="header__body">
                     <a class="header__logo" href="#">
@@ -32,16 +33,16 @@
                     </button>
                     <nav class="header__nav">
                         <ul class="header__menu">
-                            <li>
-                                <a class="header__link" href="index.html">Главная</a>
+                            <li class="header__menu-item">
+                                <a class="header__link" href="#">Главная</a>
                             </li>
-                            <li>
+                            <li class="header__menu-item">
                                 <a class="header__link header__link_dropdown" href="catalog.html">Каталог</a>
                             </li>
-                            <li>
+                            <li class="header__menu-item">
                                 <a class="header__link" href="#">Избранное</a>
                             </li>
-                            <li>
+                            <li class="header__menu-item">
                                 <a class="header__link" href="#">Войти</a>
                             </li>
                         </ul>
@@ -122,6 +123,57 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__desc">
+                                        <h2 class="catalog__title">Essenbach</h2>
+                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
+                                    </div>
+                                    <div class="catalog__brewery">
+                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                        <span>Plague Brew</span>
+                                    </div>
+                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                        своё
+                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                        изменили,
+                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                        перемешивающимися с
+                                        пряно-пшеничной базой напитка.
+                                    </p>
+                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                </div>
+                            </li>
+                            <li class="catalog__item">
+                                <div class="slider slider_catalog">
+                                    <div class="slider__wrapper">
+                                        <div class="slider__slides">
+                                            <div class="slider__slide active slider__slide_catalog">
+                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                            </div>
+                                            <div class="slider__slide slider__slide_catalog">
+                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__btns slider__btns_catalog">
+                                        <div class="slider__button slider__button_next slider__button_catalog"
+                                            onclick="moveSlide(-1)">
+                                            <button></button>
+                                        </div>
+                                        <div class="slider__button slider__button_prev slider__button_catalog"
+                                            onclick="moveSlide(1)">
+                                            <button></button>
+                                        </div>
+                                    </div>
+                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -188,7 +240,8 @@
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
                                     <a class="catalog__btn" href="card-page.html">Оценить</a>
                                 </div>
-                            </li>      <li class="catalog__item">
+                            </li>
+                            <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
                                         <div class="slider__slides">

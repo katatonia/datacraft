@@ -7,6 +7,7 @@
 	left: 0;
 	z-index: 100;
 	padding: 1.2rem;
+	background-color: variables.$black;
 
 	&::before {
 		content: "";
@@ -24,7 +25,6 @@
 			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
-
 
 	&__body {
 		position: relative;
@@ -48,8 +48,13 @@
         gap: 2rem;
 	}
 
-	&__link {
+	&__menu-item {
 		position: relative;
+		padding: 1.2rem;
+		cursor: pointer;
+	}
+
+	&__link {
 		font-size: 1.2rem;
 	}
 
@@ -164,7 +169,7 @@
 	}
 
 	@media (min-width: variables.$vp-768) {
-		&__link {
+		&__menu-item {
 			&::after {
 				content: "";
 				position: absolute;
