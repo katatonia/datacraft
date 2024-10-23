@@ -14,16 +14,16 @@
 		align-items: center;
 		content: "";
 		position: absolute;
-		bottom: 8rem;
+		bottom: 7rem;
 		right: 10rem;
 		cursor: pointer;
-		border: 5px solid variables.$black;
+		border: 5px solid variables.$white;
 		border-radius: 20px;
 		padding: 1.2rem;
 	}
 
 	&__wrapper {
-		padding: 15rem 0 10rem;
+		padding: 12rem 5rem 7rem;
 	}
 
 	&__grid {
@@ -33,10 +33,16 @@
 		gap: 4rem;
 		padding: 3rem;
 		background-color: rgba(1, 1, 1, 0.5);
+		border-radius: 5px;
 
 		@media (max-width: variables.$vp-1024) {
 			grid-template-columns: 1fr;
 		}
+	}
+
+	&__about {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__brew {
@@ -52,7 +58,6 @@
 
 	&__desc {
 		margin: 2rem 0;
-		font-size: 1.3rem;
 	}
 
 	&__beer-desc {
@@ -76,27 +81,26 @@
 		padding: 0.5rem;
 		background-color: variables.$black;
 		color: variables.$white;
-	}
-
-	&__style-list-title {
-		font-size: 0.8rem;
+		font-size: 0.8889rem;
+		border-radius: 5px;
 	}
 
 	&__style-list-text {
 		padding: 1rem;
-		font-size: 1.2rem;
 	}
 
 	&__beer-profile {
 		display: flex;
-		font-size: 1.2rem;
+		font: {
+			size: 2rem;
+			weight: 400;
+		}
 		justify-content: center;
-		margin: 2rem 0rem;
+		margin: 2rem 0;
 	}
 
 	&__beer-profile-item {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
 		padding: 0 2rem 0;
 
@@ -130,7 +134,7 @@
 	&__rate {
 		display: flex;
 		justify-content: center;
-		font-size: 1.2rem;
+		font-size: 0.8889rem;
 	}
 
 	&__rate-item {
@@ -177,31 +181,14 @@
 		cursor: pointer;
 	}
 
-	&__bottom {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		gap: 3rem;
+	&__reviews-btn {
+		margin: 0 auto;
 	}
 
-	&__reviews-btn {
-		width: 100%;
-		display: block;
-		max-width: 350px;
-		padding: 0.7rem;
-		cursor: pointer;
-		text-transform: uppercase;
-		background-color: variables.$black;
-		color: variables.$white;
-		text-align: center;
-		margin: 1rem auto;
-		transition: 0.3s;
-		font-size: 1.2rem;
-
-		span {
-			padding: 0 1rem;
-			font-weight: 400;
-			cursor: pointer;
-		}
+	&__bottom {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		gap: 2rem;
 	}
 }

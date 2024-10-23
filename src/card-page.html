@@ -23,7 +23,7 @@
         <header class="header header_index">
             <div class="container">
                 <div class="header__body">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
                     </a>
                     <button class="header__burger">
@@ -59,27 +59,24 @@
                         <div class="slider">
                             <div class="slider__wrapper">
                                 <h2 class="slider__title">Essenbach
-                                    <div class="slider__icons">
-                                        <img class="slider__heart" width="60" height="60" src="icons/heart.svg" alt="#">
-                                        <img width="60" height="60" src="img/qr.png" alt="#">
-                                    </div>
+                                    <img class="slider__heart" width="60" height="60" src="icons/heart.svg" alt="#">
                                 </h2>
                                 <span class="slider__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 <div class="slider__slides">
                                     <div class="slider__slide active">
-                                        <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        <img width="500" height="500" src="img/essenbach.jpg" alt="#">
                                     </div>
                                     <div class="slider__slide">
-                                        <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
+                                        <img width="500" height="500" src="img/wheat-field.jpg" alt="#">
                                     </div>
                                 </div>
                                 <div class="slider__btns">
                                     <button class="slider__button slider__button_next" onclick="moveSlide(-1)">
-                                        <img class="slider__img-1" width="150" height="150" src="img/essenbach.jpg"
+                                        <img class="slider__img-1" width="120" height="120" src="img/essenbach.jpg"
                                             alt="#">
                                     </button>
                                     <button class="slider__button slider__button_prev" onclick="moveSlide(1)">
-                                        <img class="slider__img-2" width="150" height="150" src="img/wheat-field.jpg"
+                                        <img class="slider__img-2" width="120" height="120" src="img/wheat-field.jpg"
                                             alt="#">
                                     </button>
                                 </div>
@@ -129,21 +126,13 @@
                                     </li>
                                 </ul>
                             </div>
+                            <ul class="card__beer-profile">
+                                <li class="card__beer-profile-item">ABV 5</li>
+                                <li class="card__beer-profile-item">OG 3</li>
+                                <li class="card__beer-profile-item">IBU 10</li>
+                            </ul>
                             <div class="card__bottom">
-                                <ul class="card__beer-profile">
-                                    <li class="card__beer-profile-item">
-                                        <span>ABV</span>
-                                        <span>5</span>
-                                    </li>
-                                    <li class="card__beer-profile-item">
-                                        <span>OG</span>
-                                        <span>13</span>
-                                    </li>
-                                    <li class="card__beer-profile-item">
-                                        <span>IBU</span>
-                                        <span>10</span>
-                                    </li>
-                                </ul>
+                                <a class="slider__reviews-btn button" href="#reviews">Читать отзывы</a>
                                 <ul class="card__rate">
                                     <li class="card__rate-item">
                                         <span>Рейтинг</span>
@@ -158,85 +147,58 @@
                                         <span>3.68</span>
                                     </li>
                                 </ul>
+                                <img class="card__qr" width="100" height="100" src="img/qr.png" alt="#">
                             </div>
                         </div>
                     </div>
-                    <ul class="reviews">
+                    <ul class="reviews" id="reviews">
+                        <h2 class="reviews__title">Отзывы</h2>
                         <li class="reviews__comment">
-                            <div class="reviews__title">
-                                <span class="reviews__name">Essenbach</span>
-                                <div class="reviews__rate">
-                                    <span class="reviews__item">☆ 4</span>
-                                    <span class="reviews__item"></span>
+                            <div class="reviews__info">
+                                <div class="reviews__subtitle">
+                                    <span class="reviews__name">Essenbach</span>
+                                    <p class="reviews__rate">☆ 4</p>
                                 </div>
-                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                                <span class="reviews__date">22.08.2024</span>
                             </div>
-                            <div class="reviews__text">
-                                <span class="reviews__item reviews__item_text">Очень вкусно</span>
-                            </div>
+                            <p class="reviews__text">Очень вкусно</p>
                         </li>
                         <li class="reviews__comment">
-                            <div class="reviews__title">
-                                <span class="reviews__name">Essenbach</span>
-                                <div class="reviews__rate">
-                                    <span class="reviews__item">☆ 5</span>
-                                    <span class="reviews__item"></span>
+                            <div class="reviews__info">
+                                <div class="reviews__subtitle">
+                                    <span class="reviews__name">Essenbach</span>
+                                    <p class="reviews__rate">☆ 4</p>
                                 </div>
-                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                                <span class="reviews__date">22.08.2024</span>
                             </div>
-                            <div class="reviews__text">
-                                <span class="reviews__item reviews__item_text">Очень вкусная пшеничка :)</span>
-                            </div>
+                            <p class="reviews__text">Очень вкусно</p>
                         </li>
                         <li class="reviews__comment">
-                            <div class="reviews__title">
-                                <span class="reviews__name">Essenbach</span>
-                                <div class="reviews__rate">
-                                    <span class="reviews__item">☆ 5</span>
-                                    <span class="reviews__item"></span>
+                            <div class="reviews__info">
+                                <div class="reviews__subtitle">
+                                    <span class="reviews__name">Essenbach</span>
+                                    <p class="reviews__rate">☆ 4</p>
                                 </div>
-                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                                <span class="reviews__date">22.08.2024</span>
                             </div>
-                            <div class="reviews__text">
-                                <span class="reviews__item reviews__item_text">Best of the best</span>
-                            </div>
+                            <p class="reviews__text">Очень вкусно</p>
                         </li>
                         <li class="reviews__comment">
-                            <div class="reviews__title">
-                                <span class="reviews__name">Essenbach</span>
-                                <div class="reviews__rate">
-                                    <span class="reviews__item">☆ 4</span>
-                                    <span class="reviews__item"></span>
+                            <div class="reviews__info">
+                                <div class="reviews__subtitle">
+                                    <span class="reviews__name">Essenbach</span>
+                                    <p class="reviews__rate">☆ 4</p>
                                 </div>
-                                <span class="reviews__item reviews__item_date">22.08.2024</span>
+                                <span class="reviews__date">22.08.2024</span>
                             </div>
-                            <div class="reviews__text">
-                                <span class="reviews__item reviews__item_text">Отличное вкусное легкое
-                                    пиво</span>
-                            </div>
+                            <p class="reviews__text">Очень вкусно</p>
                         </li>
-                        <li class="reviews__comment">
-                            <div class="reviews__title">
-                                <span class="reviews__name">Essenbach</span>
-                                <div class="reviews__rate">
-                                    <span class="reviews__item">☆ 4</span>
-                                    <span class="reviews__item"></span>
-                                </div>
-                                <span class="reviews__item reviews__item_date">22.08.2024</span>
-                            </div>
-                            <div class="reviews__text">
-                                <span class="reviews__item reviews__item_text">Популярные сорта</span>
-                            </div>
-                        </li>
+
                     </ul>
-                    <button class="card__reviews-btn card__reviews-btn_bottom">
-                        <span>
-                            Читать далее
-                        </span>
-                    </button>
+                    <button class="card__reviews-btn button">Читать далее</button>
                 </div>
                 <button class="card__up-btn">
-                    <img width="70" height="70" src="icons/up-btn.svg" alt="#">
+                    <img width="40" height="40" src="icons/arrow.svg" alt="#">
                 </button>
             </section>
         </main>
@@ -244,6 +206,21 @@
 
         <footer class="footer">
             <div class="footer__body container">
+                <div class="contacts">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <div class="contacts__wrapper">
+                        <div class="contacts__connection">
+                            <a class="contacts__connection-item contacts__connection-item_phone"
+                                href="tel:+79217430075">+79217430075
+                            </a>
+                            <a class="contacts__connection-item contacts__connection-item_mail"
+                                href="mailto:info@datacraft.su">info@datacraft.su
+                            </a>
+                            <span class="contacts__location">ООО «ДатаКрафт» ИНН 7810997481 Санкт-Петербург,Московское
+                                шоссе, дом 7, литера Б, помещение 1-Н</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="footer__social">
                     <a class="footer__logo" href="#">
                         <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
@@ -261,22 +238,6 @@
                         <a class="social__link" href="https://www.youtube.com/@-datacraft-">
                             <img width="50" height="50" src="icons/youtube.svg" alt="#">
                         </a>
-                    </div>
-                </div>
-                <div class="contacts">
-                    <div class="contacts__wrapper">
-                        <h2 class="contacts__title">Контакты</h2>
-                        <div class="contacts__connection">
-                            <a class="contacts__connection-item contacts__connection-item_phone"
-                                href="tel:+79217430075">+79217430075</a>
-                            <a class="contacts__connection-item contacts__connection-item_mail"
-                                href="mailto:info@datacraft.su">info@datacraft.su</a>
-                        </div>
-                        <div class="contacts__location">
-                            <span class="contacts__location-item">ИНН 7810997481</span>
-                            <span class="contacts__location-item">ООО «ДатаКрафт»</span>
-                            <span class="contacts__location-item contacts__location-item_address">Санкт-Петербург,Московское шоссе, дом 7, литера Б,  помещение 1-Н</span>
-                        </div>
                     </div>
                 </div>
             </div>

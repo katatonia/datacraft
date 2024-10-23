@@ -60,7 +60,7 @@
                                 <form class="catalog__select-form">
                                     <label for="status-select">Статус</label>
                                     <select class="catalog__select" name="status" id="status-select">
-                                        <option value="none">Не указан</option>
+                                        <option value="none" selected>Не указан</option>
                                         <option value="on">Включён</option>
                                         <option value="off">Выключен</option>
                                     </select>
@@ -68,28 +68,28 @@
                                 <form class="catalog__select-form">
                                     <label>Пивоварня</label>
                                     <select class="catalog__select" name="brewery" id="brewery-select">
-                                        <option value="none">Не указан</option>
+                                        <option selected value="none">Не указан</option>
                                         <option value="plague-brew">Plague Brew</option>
                                     </select>
                                 </form>
                                 <form class="catalog__select-form">
                                     <label>Категория</label>
                                     <select class="catalog__select" name="category" id="category-select">
-                                        <option value="none">Не указана</option>
+                                        <option selected value="none">Не указана</option>
                                         <option value="light">Светлое</option>
                                     </select>
                                 </form>
                                 <form class="catalog__select-form">
                                     <label for="taste-select">Вкус</label>
                                     <select class="catalog__select" name="taste" id="taste-select">
-                                        <option value="none">Не указан</option>
+                                        <option selected value="none">Не указан</option>
                                         <option value="wheat">Пшеничный</option>
                                     </select>
                                 </form>
                                 <form class="catalog__select-form">
                                     <label for="experimantal-select">Школа пивоварения</label>
                                     <select class="catalog__select" name="experimantal" id="experimantal-select">
-                                        <option value="none">Не указана</option>
+                                        <option selected value="none">Не указана</option>
                                         <option value="experimental">Экспериментальное пиво</option>
                                     </select>
                                 </form>
@@ -97,7 +97,7 @@
                             <search class="catalog__search">
                                 <form>
                                     <input type="search">
-                                    <button type="button">Найти</button>
+                                    <button class="button" type="button">Найти</button>
                                 </form>
                             </search>
                         </div>
@@ -105,7 +105,7 @@
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -147,13 +147,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -195,13 +195,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -221,6 +221,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -240,13 +243,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -266,6 +269,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -285,13 +291,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -311,6 +317,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -330,13 +339,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -356,6 +365,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -375,13 +387,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -401,6 +413,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -420,13 +435,13 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                             <li class="catalog__item">
                                 <div class="slider slider_catalog">
                                     <div class="slider__wrapper">
-                                        <div class="slider__slides">
+                                        <div class="slider__slides slider__slides_catalog">
                                             <div class="slider__slide active slider__slide_catalog">
                                                 <img width="600" height="600" src="img/essenbach.jpg" alt="#">
                                             </div>
@@ -446,6 +461,9 @@
                                         </div>
                                     </div>
                                     <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                                 </div>
                                 <div class="catalog__card">
                                     <div class="catalog__desc">
@@ -465,7 +483,7 @@
                                         пряно-пшеничной базой напитка.
                                     </p>
                                     <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn" href="card-page.html">Оценить</a>
+                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
                                 </div>
                             </li>
                         </ul>

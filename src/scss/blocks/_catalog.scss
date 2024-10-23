@@ -9,16 +9,16 @@
 	height: 100%;
 
 	&__wrapper {
-		padding: 15rem 2.6rem 12rem;
+		padding: 15rem 0 12rem;
 	}
 
 	&__filters {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: flex-end;
 		flex-wrap: wrap;
 		gap: 2rem;
-		margin-left: 8rem;
+		margin-bottom: 5rem;
 	}
 
 	&__selects {
@@ -40,12 +40,38 @@
 			border: 1px solid variables.$lightgrey;
 			padding: .7rem 2rem .7rem .7rem;
 			border-radius: 4px;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			position: relative;
+			border: 2px solid variables.$white;
+			background-color: variables.$black;
+			border-radius: 5px;
+			color: variables.$white;
+			box-sizing: border-box;
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 0;
+				right: 0;
+				background-image: url('../../icons/select-arrow.svg');
+				background-repeat: no-repeat;
+				width: 15px;
+				height: 15px;
+			}
+
+			option {
+				font-family: "BezierSans";
+				outline: none;
+			}
+		}
+
+		label {
+			font-weight: 400;
 		}
 	}
 
@@ -61,21 +87,14 @@
 		}
 
 		input {
-			border: 1px solid variables.$lightgrey;
-			padding: .7rem;
+			outline: 2px solid variables.$black;
+			padding: .5rem;
 			border-radius: 4px;
 			width: 37.1rem;
-			outline: 1px solid variables.$black;
-		}
-
-		button {
-			padding: 10px;
-			max-width: 100%;
-			width: 200px;
-			background-color: variables.$white;
-			color: variables.$black;
-			border-radius: 5px;
-			cursor: pointer;
+			font: {
+				family: "BezierSans";
+				size: 1rem;
+			}
 		}
 	}
 
@@ -85,7 +104,13 @@
 		justify-content: center;
 		column-gap: 2rem;
 		row-gap: 7rem;
-		margin-top: 5rem;
+		padding: 5rem;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__subtitle {
@@ -97,6 +122,9 @@
 		background-color: white;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		padding: 1.5rem 1rem 1.5rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
 	}
 
 	&__heart {
@@ -115,6 +143,7 @@
 		font-size: 1.5rem;
 		margin-bottom: 0.5rem;
 		text-align: center;
+		font-weight: 400;
 	}
 
 	&__brewery {
@@ -131,22 +160,12 @@
 
 	&__qr {
 		display: block;
-		margin: 0 auto;
+		margin: auto;
+		margin-bottom: 1.5rem;
 	}
 
 	&__btn {
-		max-width: 300px;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 1rem;
-		background-color: variables.$black;
 		margin: 0 auto;
-		border-radius: 5px;
-		color: variables.$white;
-		cursor: pointer;
-		margin-top: 2rem;
 	}
 
 	&__icons {
@@ -165,14 +184,15 @@
 	&__pagination-btn {
 		width: 70px;
 		height: 70px;
-		background-color: variables.$black;
+		background-color: rgba(0, 0, 0, .5);
 		color: variables.$white;
 		border-radius: 5px;
 		cursor: pointer;
-		border: 1px solid variables.$white;
+		border: 2px solid variables.$white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		font-weight: 400;
 
 		&_prev,
 		&_next {
@@ -180,13 +200,17 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			cursor: pointer;
 
 			&:before {
 				position: absolute;
-				content: "\2190";
-				font-size: 2rem;
-				color: variables.$white;
-				border-radius: 3px;
+				content: "";
+				width: 30px;
+				height: 30px;
+				background-image: url("../../icons/arrow.svg");
+				background-repeat: no-repeat;
+				background-position: center;
+				transform: rotate(-90deg);
 			}
 		}
 

@@ -1,14 +1,31 @@
 @font-face {
-	font-family: "FiraCode";
+	font-family: "BezierSans";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url("../fonts/BezierSans-Light.woff") format("woff"), url("../fonts/BezierSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BezierSans";
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("../fonts/FiraCode-Regular.woff") format("woff"), url("../fonts/FiraCode-Regular.woff2") format("woff2");
+	src: url("../fonts/BezierSans-Regular.woff") format("woff"), url("../fonts/BezierSans-Regular.woff2") format("woff2");
 }
+
 @font-face {
-	font-family: "FiraCode";
+	font-family: "BezierSans";
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	font-display: swap;
-	src: url("../fonts/FiraCode-Medium.woff") format("woff"), url("../fonts/FiraCode-Medium.woff2") format("woff2");
+	src: url("../fonts/BezierSans-Bold.woff") format("woff"), url("../fonts/BezierSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BezierSans";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("../fonts/BezierSans-ExtraBold.woff") format("woff"), url("../fonts/BezierSans-ExtraBold.woff2") format("woff2");
 }
