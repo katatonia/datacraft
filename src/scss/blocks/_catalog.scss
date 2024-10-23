@@ -2,26 +2,43 @@
 
 .catalog {
 	background-color: variables.$white;
+	background-image: url("../img/bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
 
 	&__wrapper {
-		padding: 15rem 5rem 12rem;
+		padding: 15rem 2.6rem 12rem;
+	}
+
+	&__filters {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 2rem;
+		margin-left: 8rem;
 	}
 
 	&__selects {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
+		flex-wrap: wrap;
 		gap: 1.5rem;
 	}
 
-	&__select {
-		color: variables.$black;
+	&__select-form {
+		color: variables.$white;
 		display: flex;
-		gap: 1rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: .5rem;
 
 		select {
 			border: 1px solid variables.$lightgrey;
-			padding: 5px 20px 5px 10px;
+			padding: .7rem 2rem .7rem .7rem;
 			border-radius: 4px;
 			-webkit-appearance: none;
 			-moz-appearance: none;
@@ -32,23 +49,31 @@
 		}
 	}
 
+	&__select {
+		width: 15rem;
+		outline: 1px solid variables.$black;
+	}
+
 	&__search {
 		form {
 			display: flex;
-			gap: 1rem;
+			gap: 1.5rem;
 		}
 
 		input {
 			border: 1px solid variables.$lightgrey;
-			padding: 5px 20px 5px 10px;
+			padding: .7rem;
 			border-radius: 4px;
+			width: 37.1rem;
+			outline: 1px solid variables.$black;
 		}
 
 		button {
 			padding: 10px;
-			max-width: 100px;
-			width: 100%;
-			background-color: variables.$tomato;
+			max-width: 100%;
+			width: 200px;
+			background-color: variables.$white;
+			color: variables.$black;
 			border-radius: 5px;
 			cursor: pointer;
 		}
@@ -56,78 +81,121 @@
 
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(4, 400px);
-        justify-content: center;
+		grid-template-columns: repeat(4, 350px);
+		justify-content: center;
 		column-gap: 2rem;
 		row-gap: 7rem;
 		margin-top: 5rem;
 	}
 
-	&__card {
-        color: variables.$black;
-		background-color: white;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem 1rem 1.5rem;
+	&__subtitle {
+		text-align: left;
 	}
 
-    &__heart {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        cursor: pointer;
-    }
+	&__card {
+		color: variables.$black;
+		background-color: white;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		padding: 1.5rem 1rem 1.5rem;
+	}
 
-    &__desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	&__heart {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		cursor: pointer;
+	}
 
-    &__title {
-        font-size: 1.5rem;
-        margin-bottom: .5rem;
-    }
+	&__desc {
+		display: flex;
+		flex-direction: column;
+	}
 
-	&__subtitle {
+	&__title {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
 		text-align: center;
 	}
 
-    &__brewery {
-        display: flex;
-        gap: 0.5rem;
-        margin-top: 1.5rem;
-        align-items: center;
-        justify-content: center;
-    }
+	&__brewery {
+		display: flex;
+		gap: 0.5rem;
+		margin-top: .5rem;
+		align-items: center;
+	}
 
-    &__text {
-        text-align: center;
-        margin: 2rem 0;
-    }
+	&__text {
+		text-align: center;
+		margin: 2rem 0;
+	}
 
-    &__qr {
-        display: block;
-        margin: 0 auto;
-    }
+	&__qr {
+		display: block;
+		margin: 0 auto;
+	}
 
-    &__btn {
-        max-width: 300px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background-color: variables.$tomato;
-        margin: 0 auto;
-        border-radius: 5px;
-        color: variables.$white;
-        cursor: pointer;
-        margin-top: 5rem;
-    }
+	&__btn {
+		max-width: 300px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		background-color: variables.$black;
+		margin: 0 auto;
+		border-radius: 5px;
+		color: variables.$white;
+		cursor: pointer;
+		margin-top: 2rem;
+	}
 
-    &__icons {
-        display: flex;
-        align-items: flex-end;
-    }
+	&__icons {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__pagination {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+		margin-top: 4rem;
+	}
+
+	&__pagination-btn {
+		width: 70px;
+		height: 70px;
+		background-color: variables.$black;
+		color: variables.$white;
+		border-radius: 5px;
+		cursor: pointer;
+		border: 1px solid variables.$white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_prev,
+		&_next {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:before {
+				position: absolute;
+				content: "\2190";
+				font-size: 2rem;
+				color: variables.$white;
+				border-radius: 3px;
+			}
+		}
+
+		&_prev.hidden {
+			visibility: hidden;
+		}
+
+		&_next {
+			transform: rotate(180deg);
+		}
+	}
 }
