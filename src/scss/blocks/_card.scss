@@ -23,7 +23,8 @@
 	}
 
 	&__wrapper {
-		padding: 12rem 5rem 7rem;
+		padding: 12rem 5rem 15rem;
+		position: relative;
 	}
 
 	&__grid {
@@ -93,7 +94,7 @@
 		display: flex;
 		font: {
 			size: 2rem;
-			weight: 400;
+			weight: 300;
 		}
 		justify-content: center;
 		margin: 2rem 0;
@@ -183,6 +184,7 @@
 
 	&__reviews-btn {
 		margin: 0 auto;
+		padding: .7rem;
 	}
 
 	&__bottom {

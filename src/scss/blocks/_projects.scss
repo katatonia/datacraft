@@ -16,23 +16,6 @@
         align-items: center;
         padding: 4rem 0;
         position: relative;
-
-        &::after,
-        &::before {
-            position: absolute;
-            content: "";
-            width: 80rem;
-            height: 1px;
-            background-color: variables.$black;
-        }
-
-        &::after {
-            bottom: 0;
-        }
-
-        &::before {
-            top: 0;
-            width: 110rem;
-        }
+        background-color: rgba(255, 255, 255, .5);
     }
 }

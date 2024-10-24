@@ -20,10 +20,10 @@
     <div class="wrapper">
 
 
-        <header class="header header_index">
+        <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
                     </a>
                     <button class="header__burger">
@@ -47,478 +47,460 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="header__contacts">
+                        <a class="header__contacts-link header__contacts-link_phone"
+                            href="tel:+79217430075">+79217430075
+                        </a>
+                        <a class="header__contacts-link header__contacts-link_mail"
+                            href="mailto:info@datacraft.su">info@datacraft.su
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main class="page">
             <section class="catalog">
-                <div class="container">
-                    <div class="catalog__wrapper">
-                        <div class="catalog__filters">
-                            <div class="catalog__selects">
-                                <form class="catalog__select-form">
-                                    <label for="status-select">Статус</label>
-                                    <select class="catalog__select" name="status" id="status-select">
-                                        <option value="none" selected>Не указан</option>
-                                        <option value="on">Включён</option>
-                                        <option value="off">Выключен</option>
-                                    </select>
-                                </form>
-                                <form class="catalog__select-form">
-                                    <label>Пивоварня</label>
-                                    <select class="catalog__select" name="brewery" id="brewery-select">
-                                        <option selected value="none">Не указан</option>
-                                        <option value="plague-brew">Plague Brew</option>
-                                    </select>
-                                </form>
-                                <form class="catalog__select-form">
-                                    <label>Категория</label>
-                                    <select class="catalog__select" name="category" id="category-select">
-                                        <option selected value="none">Не указана</option>
-                                        <option value="light">Светлое</option>
-                                    </select>
-                                </form>
-                                <form class="catalog__select-form">
-                                    <label for="taste-select">Вкус</label>
-                                    <select class="catalog__select" name="taste" id="taste-select">
-                                        <option selected value="none">Не указан</option>
-                                        <option value="wheat">Пшеничный</option>
-                                    </select>
-                                </form>
-                                <form class="catalog__select-form">
-                                    <label for="experimantal-select">Школа пивоварения</label>
-                                    <select class="catalog__select" name="experimantal" id="experimantal-select">
-                                        <option selected value="none">Не указана</option>
-                                        <option value="experimental">Экспериментальное пиво</option>
-                                    </select>
-                                </form>
+                <div class="catalog__wrapper container">
+                    <div class="catalog__filters">
+                        <div class="catalog__selects">
+                            <form class="catalog__select-form">
+                                <label for="status-select">Статус</label>
+                                <select class="catalog__select" name="status" id="status-select">
+                                    <option value="none" selected>Не указан</option>
+                                    <option value="on">Включён</option>
+                                    <option value="off">Выключен</option>
+                                </select>
+                            </form>
+                            <form class="catalog__select-form">
+                                <label>Пивоварня</label>
+                                <select class="catalog__select" name="brewery" id="brewery-select">
+                                    <option selected value="none">Не указан</option>
+                                    <option value="plague-brew">Plague Brew</option>
+                                </select>
+                            </form>
+                            <form class="catalog__select-form">
+                                <label>Категория</label>
+                                <select class="catalog__select" name="category" id="category-select">
+                                    <option selected value="none">Не указана</option>
+                                    <option value="light">Светлое</option>
+                                </select>
+                            </form>
+                            <form class="catalog__select-form">
+                                <label for="taste-select">Вкус</label>
+                                <select class="catalog__select" name="taste" id="taste-select">
+                                    <option selected value="none">Не указан</option>
+                                    <option value="wheat">Пшеничный</option>
+                                </select>
+                            </form>
+                            <form class="catalog__select-form">
+                                <label for="experimantal-select">Школа пивоварения</label>
+                                <select class="catalog__select" name="experimantal" id="experimantal-select">
+                                    <option selected value="none">Не указана</option>
+                                    <option value="experimental">Экспериментальное пиво</option>
+                                </select>
+                            </form>
+                        </div>
+                        <search class="catalog__search">
+                            <form>
+                                <input type="search">
+                                <button class="button" type="button">Найти</button>
+                            </form>
+                        </search>
+                    </div>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
+                                    </div>
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                        <use href="sprite.svg#heart"></use>
+                                    </svg> -->
                             </div>
-                            <search class="catalog__search">
-                                <form>
-                                    <input type="search">
-                                    <button class="button" type="button">Найти</button>
-                                </form>
-                            </search>
-                        </div>
-                        <ul class="catalog__list">
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
+                                </div>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
+                                </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="slider slider_catalog">
+                                <div class="slider__wrapper">
+                                    <div class="slider__slides slider__slides_catalog">
+                                        <div class="slider__slide active slider__slide_catalog">
+                                            <img width="600" height="600" src="img/essenbach.jpg" alt="#">
+                                        </div>
+                                        <div class="slider__slide slider__slide_catalog">
+                                            <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
                                         </div>
                                     </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
+                                </div>
+                                <div class="slider__btns slider__btns_catalog">
+                                    <div class="slider__button slider__button_next slider__button_catalog"
+                                        onclick="moveSlide(-1)">
+                                        <button></button>
                                     </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
+                                    <div class="slider__button slider__button_prev slider__button_catalog"
+                                        onclick="moveSlide(1)">
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
+                                <!-- <svg viewBox="0 0 40 40" width="40" height="40">
                                         <use href="sprite.svg#heart"></use>
                                     </svg> -->
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__desc">
+                                    <h2 class="catalog__title">Essenbach</h2>
+                                    <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
                                 </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                                <div class="catalog__brewery">
+                                    <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
+                                    <span>Plague Brew</span>
                                 </div>
-                            </li>
-                            <li class="catalog__item">
-                                <div class="slider slider_catalog">
-                                    <div class="slider__wrapper">
-                                        <div class="slider__slides slider__slides_catalog">
-                                            <div class="slider__slide active slider__slide_catalog">
-                                                <img width="600" height="600" src="img/essenbach.jpg" alt="#">
-                                            </div>
-                                            <div class="slider__slide slider__slide_catalog">
-                                                <img width="600" height="600" src="img/wheat-field.jpg" alt="#">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slider__btns slider__btns_catalog">
-                                        <div class="slider__button slider__button_next slider__button_catalog"
-                                            onclick="moveSlide(-1)">
-                                            <button></button>
-                                        </div>
-                                        <div class="slider__button slider__button_prev slider__button_catalog"
-                                            onclick="moveSlide(1)">
-                                            <button></button>
-                                        </div>
-                                    </div>
-                                    <img class="catalog__heart" width="50" height="50" src="icons/heart.svg" alt="#">
-                                    <!-- <svg viewBox="0 0 40 40" width="40" height="40">
-                                        <use href="sprite.svg#heart"></use>
-                                    </svg> -->
-                                </div>
-                                <div class="catalog__card">
-                                    <div class="catalog__desc">
-                                        <h2 class="catalog__title">Essenbach</h2>
-                                        <span class="catalog__subtitle">Пшеничное пиво (Wheat beer)</span>
-                                    </div>
-                                    <div class="catalog__brewery">
-                                        <img width="50" height="50" src="img/plague-brew.jpg" alt="#">
-                                        <span>Plague Brew</span>
-                                    </div>
-                                    <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
-                                        своё
-                                        имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
-                                        изменили,
-                                        рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
-                                        перемешивающимися с
-                                        пряно-пшеничной базой напитка.
-                                    </p>
-                                    <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
-                                    <a class="catalog__btn button" href="card-page.html">Оценить</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="catalog__pagination">
-                            <li class="catalog__pagination-btn catalog__pagination-btn_prev hidden"></li>
-                            <li class="catalog__pagination-btn">1</li>
-                            <li class="catalog__pagination-btn">2</li>
-                            <li class="catalog__pagination-btn">3</li>
-                            <li class="catalog__pagination-btn catalog__pagination-btn_next"></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__body container">
-                <div class="contacts">
-                    <h2 class="contacts__title">Контакты</h2>
-                    <div class="contacts__wrapper">
-                        <div class="contacts__connection">
-                            <a class="contacts__connection-item contacts__connection-item_phone"
-                                href="tel:+79217430075">+79217430075
-                            </a>
-                            <a class="contacts__connection-item contacts__connection-item_mail"
-                                href="mailto:info@datacraft.su">info@datacraft.su
-                            </a>
-                            <span class="contacts__location">ООО «ДатаКрафт» ИНН 7810997481 Санкт-Петербург,Московское шоссе, дом 7, литера Б,  помещение 1-Н</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__social">
-                    <a class="footer__logo" href="#">
-                        <img width="251" height="100" src="img/logo-large-white.png" alt="Логотип datacraft">
-                    </a>
+                                <p class="catalog__text">Классический Пшеничный Эль Essenbach не спроста носит
+                                    своё
+                                    имя, ведь именно в баварской общине Эссенбах мы позаимствовали, и слегка
+                                    изменили,
+                                    рецепт этого замечательного сорта пива, с бананово-грушевыми тонами,
+                                    перемешивающимися с
+                                    пряно-пшеничной базой напитка.
+                                </p>
+                                <img class="catalog__qr" width="50" height="50" src="img/qr.png" alt="#">
+                                <a class="catalog__btn button" href="card-page.html">Оценить</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="pagination__btn pagination__btn_prev hidden"></li>
+                        <li class="pagination__btn">1</li>
+                        <li class="pagination__btn">2</li>
+                        <li class="pagination__btn">3</li>
+                        <li class="pagination__btn pagination__btn_next"></li>
+                    </ul>
                     <div class="social">
                         <a class="social__link" href="https://www.instagram.com/data__craft?igsh=MXV1aG9xcGdzbDF6eQ==">
                             <img width="50" height="50" src="icons/instagram.svg" alt="#">
@@ -534,8 +516,11 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </section>
+
+        </main>
+
+        <footer class="footer"></footer>
 
     </div>
 

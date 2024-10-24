@@ -11,8 +11,8 @@ function setTotalPages(pages) {
 }
 
 // Кнопки
-const prevBtn = document.querySelector('.catalog__pagination-btn_prev');
-const nextBtn = document.querySelector('.catalog__pagination-btn_next');
+const prevBtn = document.querySelector('.pagination__btn_prev');
+const nextBtn = document.querySelector('.pagination__btn_next');
 
 // Функция для обновления состояния кнопок
 function updateButtons() {

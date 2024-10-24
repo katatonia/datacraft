@@ -1,0 +1,51 @@
+@use "base/variables";
+
+.pagination {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+
+	.pagination__btn {
+		width: 70px;
+		height: 70px;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: variables.$white;
+		border-radius: 5px;
+		cursor: pointer;
+		border: 2px solid variables.$white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+
+		&_prev,
+		&_next {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			&:before {
+				position: absolute;
+				content: "";
+				width: 30px;
+				height: 30px;
+				background-image: url("../../icons/arrow.svg");
+				background-repeat: no-repeat;
+				background-position: center;
+				transform: rotate(-90deg);
+			}
+		}
+
+		&_prev.hidden {
+			visibility: hidden;
+		}
+
+		&_next {
+			transform: rotate(180deg);
+		}
+	}
+}

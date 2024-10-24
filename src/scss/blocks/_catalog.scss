@@ -9,7 +9,8 @@
 	height: 100%;
 
 	&__wrapper {
-		padding: 15rem 0 12rem;
+		padding: 15rem 7rem 15rem;
+		position: relative;
 	}
 
 	&__filters {
@@ -37,8 +38,8 @@
 		gap: .5rem;
 
 		select {
-			border: 1px solid variables.$lightgrey;
-			padding: .7rem 2rem .7rem .7rem;
+			width: 15rem;
+			padding: .7rem 2rem .7rem 1rem;
 			border-radius: 4px;
 			text-overflow: ellipsis;
 			white-space: nowrap;
@@ -47,10 +48,9 @@
 			-moz-appearance: none;
 			appearance: none;
 			position: relative;
-			border: 2px solid variables.$white;
-			background-color: variables.$black;
-			border-radius: 5px;
+			background-color: rgba(0, 0, 0, .5);
 			color: variables.$white;
+			border-radius: 5px;
 			box-sizing: border-box;
 
 			&::after {
@@ -65,19 +65,18 @@
 			}
 
 			option {
-				font-family: "BezierSans";
+				font: {
+					family: "BezierSans";
+					size: 1rem;
+				}
 				outline: none;
 			}
 		}
 
 		label {
 			font-weight: 400;
+			padding-left: .7rem;
 		}
-	}
-
-	&__select {
-		width: 15rem;
-		outline: 1px solid variables.$black;
 	}
 
 	&__search {
@@ -87,14 +86,19 @@
 		}
 
 		input {
-			outline: 2px solid variables.$black;
-			padding: .5rem;
+			padding: 0 1rem;
 			border-radius: 4px;
+			background-color: rgba(0, 0, 0, .5);
+			color: variables.$white;
 			width: 37.1rem;
 			font: {
 				family: "BezierSans";
 				size: 1rem;
 			}
+		}
+
+		button {
+			padding: .3rem;
 		}
 	}
 
@@ -166,60 +170,11 @@
 
 	&__btn {
 		margin: 0 auto;
+		padding: .7rem;
 	}
 
 	&__icons {
 		display: flex;
 		align-items: flex-end;
-	}
-
-	&__pagination {
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-		justify-content: center;
-		margin-top: 4rem;
-	}
-
-	&__pagination-btn {
-		width: 70px;
-		height: 70px;
-		background-color: rgba(0, 0, 0, .5);
-		color: variables.$white;
-		border-radius: 5px;
-		cursor: pointer;
-		border: 2px solid variables.$white;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-weight: 400;
-
-		&_prev,
-		&_next {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			cursor: pointer;
-
-			&:before {
-				position: absolute;
-				content: "";
-				width: 30px;
-				height: 30px;
-				background-image: url("../../icons/arrow.svg");
-				background-repeat: no-repeat;
-				background-position: center;
-				transform: rotate(-90deg);
-			}
-		}
-
-		&_prev.hidden {
-			visibility: hidden;
-		}
-
-		&_next {
-			transform: rotate(180deg);
-		}
 	}
 }
