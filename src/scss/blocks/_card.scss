@@ -183,7 +183,7 @@
 
 	&__reviews-btn {
 		margin: 0 auto;
-		padding: .7rem;
+		padding: 0.7rem;
 	}
 
 	&__bottom {
@@ -191,5 +191,51 @@
 		justify-content: flex-end;
 		align-items: flex-end;
 		gap: 2rem;
+	}
+
+	@media (max-width: variables.$vp-1024) {
+		&__reviews-btn {
+			display: none;
+		}
+	}
+
+	@media (max-width: variables.$vp-768) {
+		&__grid {
+			grid-template-columns: repeat(1, minmax(320px, 1fr));
+			padding: 2rem;
+		}
+
+		&__beer-profile-item {
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__desc {
+			text-align: center;
+		}
+
+		&__beer-desc {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+
+		&__about {
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__bottom {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__wrapper {
+			padding: 12rem 1rem 15rem;
+		}
+
+		&__qr {
+			width: 50px;
+			height: 50px;
+		}
 	}
 }
