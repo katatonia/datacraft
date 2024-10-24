@@ -2,10 +2,18 @@
 
 .projects {
     background-color: variables.$white;
-    padding: 10rem 0;
 
-    &__wrapper {
-        margin: 0 7rem;
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+
+        img {
+            object-fit: contain;
+        }
     }
 
     &__list {
@@ -17,5 +25,24 @@
         padding: 4rem 0;
         position: relative;
         background-color: rgba(255, 255, 255, .5);
+        margin-bottom: 4rem;
+    }
+
+    @media (max-width: variables.$vp-768) {
+        &__list {
+            gap: 1.5rem;
+        }
+
+        &__item {
+            width: 11.1111rem;
+            height: 11.1111rem;
+        }
+
+        &__link {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
     }
 }

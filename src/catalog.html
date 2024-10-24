@@ -37,7 +37,7 @@
                                 <a class="header__link" href="index.html">Главная</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__link header__link_dropdown" href="catalog.html">Каталог</a>
+                                <a class="header__link header__link_dropdown" href="#">Каталог</a>
                             </li>
                             <li class="header__menu-item">
                                 <a class="header__link" href="#">Избранное</a>
@@ -47,14 +47,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header__contacts">
-                        <a class="header__contacts-link header__contacts-link_phone"
-                            href="tel:+79217430075">+79217430075
-                        </a>
-                        <a class="header__contacts-link header__contacts-link_mail"
-                            href="mailto:info@datacraft.su">info@datacraft.su
-                        </a>
-                    </div>
                 </div>
             </div>
         </header>
@@ -63,50 +55,70 @@
             <section class="catalog">
                 <div class="catalog__wrapper container">
                     <div class="catalog__filters">
-                        <div class="catalog__selects">
-                            <form class="catalog__select-form">
-                                <label for="status-select">Статус</label>
-                                <select class="catalog__select" name="status" id="status-select">
-                                    <option value="none" selected>Не указан</option>
-                                    <option value="on">Включён</option>
-                                    <option value="off">Выключен</option>
-                                </select>
-                            </form>
-                            <form class="catalog__select-form">
-                                <label>Пивоварня</label>
-                                <select class="catalog__select" name="brewery" id="brewery-select">
-                                    <option selected value="none">Не указан</option>
-                                    <option value="plague-brew">Plague Brew</option>
-                                </select>
-                            </form>
-                            <form class="catalog__select-form">
-                                <label>Категория</label>
-                                <select class="catalog__select" name="category" id="category-select">
-                                    <option selected value="none">Не указана</option>
-                                    <option value="light">Светлое</option>
-                                </select>
-                            </form>
-                            <form class="catalog__select-form">
-                                <label for="taste-select">Вкус</label>
-                                <select class="catalog__select" name="taste" id="taste-select">
-                                    <option selected value="none">Не указан</option>
-                                    <option value="wheat">Пшеничный</option>
-                                </select>
-                            </form>
-                            <form class="catalog__select-form">
-                                <label for="experimantal-select">Школа пивоварения</label>
-                                <select class="catalog__select" name="experimantal" id="experimantal-select">
-                                    <option selected value="none">Не указана</option>
-                                    <option value="experimental">Экспериментальное пиво</option>
-                                </select>
-                            </form>
-                        </div>
                         <search class="catalog__search">
                             <form>
                                 <input type="search">
                                 <button class="button" type="button">Найти</button>
                             </form>
                         </search>
+                        <div class="catalog__selects">
+                            <div class="catalog__select">
+                                <span class="catalog__select-title">Статус</span>
+                                <div class="catalog__select-header">
+                                    <span class="catalog__select-current">Не указан</span>
+                                    <div class="catalog__select-btn">&rsaquo;</div>
+                                </div>
+                                <div class="catalog__select-body">
+                                    <div class="catalog__select-item">Не указан</div>
+                                    <div class="catalog__select-item">Включён</div>
+                                    <div class="catalog__select-item">Выключен</div>
+                                </div>
+                            </div>
+                            <div class="catalog__select">
+                                <span class="catalog__select-title">Пивоварня</span>
+                                <div class="catalog__select-header">
+                                    <span class="catalog__select-current">Не указана</span>
+                                    <div class="catalog__select-btn">&rsaquo;</div>
+                                </div>
+                                <div class="catalog__select-body">
+                                    <div class="catalog__select-item">Не указана</div>
+                                    <div class="catalog__select-item">Plague Brew</div>
+                                </div>
+                            </div>
+                            <div class="catalog__select">
+                                <span class="catalog__select-title">Категория</span>
+                                <div class="catalog__select-header">
+                                    <span class="catalog__select-current">Не указана</span>
+                                    <div class="catalog__select-btn">&rsaquo;</div>
+                                </div>
+                                <div class="catalog__select-body">
+                                    <div class="catalog__select-item">Не указана</div>
+                                    <div class="catalog__select-item">Светлое</div>
+                                </div>
+                            </div>
+                            <div class="catalog__select">
+                                <span class="catalog__select-title">Вкус</span>
+                                <div class="catalog__select-header">
+                                    <span class="catalog__select-current">Не указан</span>
+                                    <div class="catalog__select-btn">&rsaquo;</div>
+                                </div>
+                                <div class="catalog__select-body">
+                                    <div class="catalog__select-item">Не указан</div>
+                                    <div class="catalog__select-item">Пшеничный</div>
+                                </div>
+                            </div>
+                            <div class="catalog__select">
+                                <span class="catalog__select-title">Школа пивоварения</span>
+                                <div class="catalog__select-header">
+                                    <span class="catalog__select-current">Не указана</span>
+                                    <div class="catalog__select-btn">&rsaquo;</div>
+                                </div>
+                                <div class="catalog__select-body">
+                                    <div class="catalog__select-item">Не указана</div>
+                                    <div class="catalog__select-item">Экспериментальное пиво</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <ul class="catalog__list">
                         <li class="catalog__item">
@@ -501,19 +513,29 @@
                         <li class="pagination__btn">3</li>
                         <li class="pagination__btn pagination__btn_next"></li>
                     </ul>
-                    <div class="social">
-                        <a class="social__link" href="https://www.instagram.com/data__craft?igsh=MXV1aG9xcGdzbDF6eQ==">
-                            <img width="50" height="50" src="icons/instagram.svg" alt="#">
-                        </a>
-                        <a class="social__link" href="https://vk.com/club225696341">
-                            <img width="50" height="50" src="icons/vk.svg" alt="#">
-                        </a>
-                        <a class="social__link" href="https://t.me/datacraft78">
-                            <img width="50" height="50" src="icons/telegram.svg" alt="#">
-                        </a>
-                        <a class="social__link" href="https://www.youtube.com/@-datacraft-">
-                            <img width="50" height="50" src="icons/youtube.svg" alt="#">
-                        </a>
+                    <div class="connection">
+                        <div class="social">
+                            <a class="social__link" href="https://www.instagram.com/data__craft?igsh=MXV1aG9xcGdzbDF6eQ==">
+                                <img width="50" height="50" src="icons/instagram.svg" alt="#">
+                            </a>
+                            <a class="social__link" href="https://vk.com/club225696341">
+                                <img width="50" height="50" src="icons/vk.svg" alt="#">
+                            </a>
+                            <a class="social__link" href="https://t.me/datacraft78">
+                                <img width="50" height="50" src="icons/telegram.svg" alt="#">
+                            </a>
+                            <a class="social__link" href="https://www.youtube.com/@-datacraft-">
+                                <img width="50" height="50" src="icons/youtube.svg" alt="#">
+                            </a>
+                        </div>
+                        <div class="contacts">
+                            <a class="contacts__link contacts__link_phone"
+                                href="tel:+79217430075">+79217430075
+                            </a>
+                            <a class="contacts__link contacts__link_mail"
+                                href="mailto:info@datacraft.su">info@datacraft.su
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -527,6 +549,7 @@
     <script src="js/menu-toggle.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/pagination.js"></script>
+    <script src="js/select.js"></script>
 
 </body>
 

@@ -28,17 +28,13 @@
 		align-items: center;
 	}
 
-    &__nav {
-        width: 60%;
-    }
-
 	&__menu {
 		display: flex;
 		position: relative;
-        flex-wrap: wrap;
+		flex-wrap: wrap;
 		z-index: 2;
 		justify-content: center;
-		gap: 4rem;
+		gap: 5rem;
 	}
 
 	&__menu-item {
@@ -48,8 +44,7 @@
 	}
 
 	&__link {
-		font-size: 1.2rem;
-		font-weight: 400;
+		font-size: 1.5rem;
 	}
 
 	&__logo {
@@ -62,59 +57,75 @@
 		display: block;
 	}
 
-	&__contacts {
-		display: flex;
-		align-items: flex-end;
-		color: variables.$white;
-		z-index: 3;
-		flex-direction: column;
-		gap: 1rem;
+	@media (max-width: variables.$vp-1366) {
+		&__menu {
+			gap: 2rem;
+		}
 	}
 
-	&__contacts-link {
-		padding-right: 2.5rem;
-		display: flex;
-		align-items: center;
-
-		&_phone {
-			position: relative;
-
-			&::before {
-				content: "";
-				position: absolute;
-				width: 30px;
-				height: 30px;
-				background-image: url("../icons/phone.svg");
-				background-repeat: no-repeat;
-                right: 0;
-				z-index: 3;
-			}
+	// АДАПТИВ ПОСЛЕ МОБИЛЬНОГО
+	@media (max-width: variables.$vp-1024) {
+		&__menu {
+			gap: 1rem;
 		}
 
-		&_mail {
-			position: relative;
+		&__menu-item {
+			padding: .5rem .5rem .5rem 0;
+		}
 
-			&::before {
+		&__logo {
+			img {
+				width: 200px;
+				height: auto;
+			}
+		}
+	}
+
+	// ХОВЕР ДЛЯ ПУНКТОВ МЕНЮ
+	@media (min-width: variables.$vp-768) {
+		&__menu-item {
+			&::after {
 				content: "";
 				position: absolute;
-				width: 30px;
-				height: 30px;
-				background-image: url("../icons/mail.svg");
-				background-repeat: no-repeat;
+				left: 0;
 				right: 0;
-				z-index: 3;
+				bottom: 0;
+				height: 2px;
+				background: variables.$white;
+				transform: scaleX(0);
+				transition: transform 0.3s ease;
+			}
+
+			&:hover::after {
+				transform: scaleX(1);
 			}
 		}
 	}
 
+	// МОБИЛЬНАЯ ВЕРСИЯ
+	@media (max-width: variables.$vp-768) {
+		&__logo {
+			img {
+				width: 150px;
+				height: auto;
+			}
+		}
+
+		&__link {
+			margin-bottom: 0;
+			font-size: 2rem;
+		}
+	}
+
+	// МЕНЮ
 	@media (max-width: variables.$vp-768) {
 		&__body {
 			height: 5.8333rem;
 		}
 
 		&__burger {
-			width: 60px;
-			height: 60px;
+			width: 40px;
+			height: 40px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -191,26 +202,6 @@
 
 		&__menu {
 			display: block;
-		}
-	}
-
-	@media (min-width: variables.$vp-768) {
-		&__menu-item {
-			&::after {
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				height: 2px;
-				background: variables.$white;
-				transform: scaleX(0);
-				transition: transform 0.3s ease;
-			}
-
-			&:hover::after {
-				transform: scaleX(1);
-			}
 		}
 	}
 }

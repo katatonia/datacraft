@@ -9,7 +9,7 @@
 	height: 100%;
 
 	&__wrapper {
-		padding: 15rem 7rem 15rem;
+		padding: 15rem 5rem 15rem;
 		position: relative;
 	}
 
@@ -20,62 +20,104 @@
 		flex-wrap: wrap;
 		gap: 2rem;
 		margin-bottom: 5rem;
+		background-color: rgba(1, 1, 1, 0.5);
+		padding: 1.5rem 2rem;
 	}
 
 	&__selects {
 		display: flex;
 		align-items: flex-start;
-		justify-content: center;
+		justify-content: flex-end;
 		flex-wrap: wrap;
 		gap: 1.5rem;
 	}
 
-	&__select-form {
-		color: variables.$white;
+	&__select {
+		position: relative;
+		width: 16.6667rem;
+		max-width: 100%;
+		gap: 0.3rem;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: .5rem;
+	}
 
-		select {
-			width: 15rem;
-			padding: .7rem 2rem .7rem 1rem;
-			border-radius: 4px;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			overflow: hidden;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			position: relative;
-			background-color: rgba(0, 0, 0, .5);
-			color: variables.$white;
-			border-radius: 5px;
-			box-sizing: border-box;
+	&__select-title {
+		padding: 0 0.7rem;
+		font-size: 1.2rem;
+	}
 
-			&::after {
-				position: absolute;
-				content: "";
-				top: 0;
-				right: 0;
-				background-image: url('../../icons/select-arrow.svg');
-				background-repeat: no-repeat;
-				width: 15px;
-				height: 15px;
-			}
+	&__select.is-active .catalog__select-body {
+		display: block;
+		z-index: 2;
+	}
 
-			option {
-				font: {
-					family: "BezierSans";
-					size: 1rem;
-				}
-				outline: none;
-			}
+	&__select-header {
+		border: 2px solid variables.$white;
+		border-radius: 5px;
+		cursor: pointer;
+		display: flex;
+		transition: .3s;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.7);
 		}
+	}
 
-		label {
-			font-weight: 400;
-			padding-left: .7rem;
+	&__select-current {
+		cursor: pointer;
+		padding: 0.7rem;
+		width: 100%;
+	}
+
+	&__select-icon {
+		align-items: center;
+		display: flex;
+		flex-shrink: 0;
+		justify-content: center;
+		height: 40px;
+		margin-left: auto;
+		text-align: center;
+		width: 40px;
+	}
+
+	&__select-body {
+		border-top: 0;
+		display: none;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		background-color: variables.$white;
+		color: variables.$black;
+	}
+
+	&__select-btn {
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 8px;
+		margin-left: auto;
+		color: variables.$white;
+		font-size: 1.5rem;
+		transform: rotate(90deg);
+		cursor: pointer;
+
+		&:hover {
+			background-color: variables.$white;
+			color: variables.$black;
+		}
+	}
+
+	&__select-item {
+		cursor: pointer;
+		line-height: 24px;
+		padding: .7rem;
+		margin-left: auto;
+		color: variables.$black;
+
+		&:hover {
+			background-color: variables.$black;
+			color: variables.$white;
 		}
 	}
 
@@ -88,17 +130,25 @@
 		input {
 			padding: 0 1rem;
 			border-radius: 4px;
-			background-color: rgba(0, 0, 0, .5);
-			color: variables.$white;
+			background-color: variables.$white;
+			color: variables.$black;
 			width: 37.1rem;
 			font: {
-				family: "BezierSans";
+				family: "SourceCodePro";
 				size: 1rem;
 			}
 		}
 
 		button {
-			padding: .3rem;
+			padding: 0.7rem;
+			background-color: rgba(0, 0, 0, 0.5);
+			border: 2px solid variables.$white;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.7);
+
+			}
 		}
 	}
 
@@ -144,22 +194,25 @@
 	}
 
 	&__title {
-		font-size: 1.5rem;
+		font: {
+			size: 1.5rem;
+			weight: 600;
+		}
 		margin-bottom: 0.5rem;
 		text-align: center;
-		font-weight: 400;
 	}
 
 	&__brewery {
 		display: flex;
 		gap: 0.5rem;
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 		align-items: center;
 	}
 
 	&__text {
 		text-align: center;
 		margin: 2rem 0;
+		font-weight: 300;
 	}
 
 	&__qr {
@@ -170,7 +223,7 @@
 
 	&__btn {
 		margin: 0 auto;
-		padding: .7rem;
+		padding: 0.7rem;
 	}
 
 	&__icons {

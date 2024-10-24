@@ -1,7 +1,10 @@
+@use "base/variables";
+
 .page {
 	&__main {
 		position: relative;
-		height: 100vh;
+		padding-top: 14rem ;
+		min-height: 100vh;
 	}
 
 	&__bg {
@@ -15,11 +18,8 @@
 	&__wrapper {
 		position: relative;
 		z-index: 2;
+		padding-bottom: 9rem;
 	}
-
-	&__projects-wrapper {
-        padding-top: 270px;
-    }
 
 	&__title-wrapper {
 		padding-top: 300px;
@@ -28,7 +28,6 @@
 	&__title {
 		font: {
 			size: 3rem;
-			weight: 600;
 		}
 		letter-spacing: 3px;
 		text-align: center;
@@ -41,6 +40,17 @@
 			font-size: 1.5rem;
 			display: block;
 			padding-top: 3rem;
+		}
+	}
+
+	@media (max-width: variables.$vp-768) {
+		&__main {
+			position: relative;
+			min-height: 100vh;
+		}
+
+		&__wrapper {
+			padding-bottom: 18rem;
 		}
 	}
 }
