@@ -43,14 +43,36 @@
 		}
 	}
 
+
+	@media (max-width: variables.$vp-1366) {
+		&__main {
+			padding-top: 180px;
+		}
+
+		&__wrapper {
+			padding: 0 80px 100px;
+		}
+	}
+
+	@media (max-width: variables.$vp-1024) {
+		&__main {
+			padding-top: 160px;
+		}
+
+		&__wrapper {
+			padding: 0 20px;
+		}
+	}
+
 	@media (max-width: variables.$vp-768) {
 		&__main {
 			position: relative;
 			min-height: 100vh;
+			padding-top: 100px;
 		}
 
 		&__wrapper {
-			padding-bottom: 18rem;
+			padding: 0 20px 180px;
 		}
 	}
 }

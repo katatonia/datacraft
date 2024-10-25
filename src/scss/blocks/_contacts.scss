@@ -1,18 +1,18 @@
 @use "base/variables";
 
 .contacts {
-		display: flex;
-		flex-direction: column;
-		color: variables.$white;
-		z-index: 3;
-		align-items: flex-end;
-		gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	color: variables.$white;
+	z-index: 3;
+	align-items: flex-end;
+	gap: 1rem;
 
 	&__link {
 		padding-right: 3.5rem;
 		display: flex;
 		align-items: center;
-        font-size: 1.5rem;
+		font-size: 1.5rem;
 
 		&_phone {
 			position: relative;
@@ -24,7 +24,7 @@
 				height: 30px;
 				background-image: url("../icons/phone.svg");
 				background-repeat: no-repeat;
-                right: 0;
+				right: 0;
 				z-index: 3;
 			}
 		}
@@ -41,6 +41,18 @@
 				background-repeat: no-repeat;
 				right: 0;
 				z-index: 3;
+			}
+		}
+	}
+
+	@media (max-width: variables.$vp-1366) {
+		&__link {
+			font-size: 1rem;
+			padding-right: 2rem;
+
+			&::before {
+				width: 20px;
+				height: 20px;
 			}
 		}
 	}

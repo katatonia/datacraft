@@ -1,11 +1,23 @@
+@use "base/variables";
+
 .social {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    z-index: 2;
 
     &__link {
         cursor: pointer;
+    }
+
+    @media (max-width: variables.$vp-1366) {
+        &__link {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
 }

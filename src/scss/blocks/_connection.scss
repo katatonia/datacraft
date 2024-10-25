@@ -3,15 +3,24 @@
 .connection {
 	position: absolute;
 	right: 0;
-    bottom: 0;
+	bottom: 0;
 	display: flex;
 	gap: 3rem;
 	align-items: center;
-	padding: 4rem 0;
+	padding: 40px;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: 0 auto;
+	z-index: 2;
+	left: 0;
+	max-width: 1600px;
+
+	@media (max-width: variables.$vp-1366) {
+		max-width: 1100px;
+	}
 
 	@media (max-width: variables.$vp-768) {
 		flex-direction: column;
+		padding: 30px;
 	}
 }

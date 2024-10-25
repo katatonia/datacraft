@@ -1,48 +1,67 @@
 @use "base/variables";
 
 .projects {
-    background-color: variables.$white;
+	background-color: variables.$white;
 
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-    &__link {
+	&__link {
+		width: 250px;
+		height: auto;
 
-        img {
-            object-fit: contain;
-        }
-    }
+		picture {
+			display: block;
+			min-width: 100%;
+		}
 
-    &__list {
-        display: flex;
-        gap: 3.7rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem 0;
-        position: relative;
-        background-color: rgba(255, 255, 255, .5);
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	&__list {
+		display: flex;
+        gap: 60px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 80px 60px;
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.5);
         margin-bottom: 4rem;
-    }
+	}
 
-    @media (max-width: variables.$vp-768) {
-        &__list {
-            gap: 1.5rem;
-        }
-
-        &__item {
-            width: 11.1111rem;
-            height: 11.1111rem;
-        }
-
+    @media (max-width: variables.$vp-1366) {
         &__link {
-            img {
-                width: 200px;
-                height: auto;
-            }
+			width: 200px;
+		}
+
+        &__list {
+            padding: 60px 40px;
+            gap: 40px;
         }
     }
+
+    @media (max-width: variables.$vp-1024) {
+        &__list {
+            gap: 20px;
+        }
+    }
+
+	@media (max-width: variables.$vp-768) {
+		&__list {
+			flex-direction: column;
+            padding: 20px;
+		}
+
+		&__link {
+			width: 150px;
+		}
+	}
 }

@@ -6,7 +6,6 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
-	padding: 1.2rem;
 
 	&::before {
 		content: "";
@@ -22,9 +21,9 @@
 	&__body {
 		position: relative;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
-		height: 6rem;
+		height: 140px;
 		align-items: center;
 	}
 
@@ -34,17 +33,13 @@
 		flex-wrap: wrap;
 		z-index: 2;
 		justify-content: center;
-		gap: 5rem;
+		gap: 2rem;
 	}
 
 	&__menu-item {
 		position: relative;
-		padding: 1.2rem;
+		padding: .5rem;
 		cursor: pointer;
-	}
-
-	&__link {
-		font-size: 1.5rem;
 	}
 
 	&__logo {
@@ -58,24 +53,27 @@
 	}
 
 	@media (max-width: variables.$vp-1366) {
-		&__menu {
-			gap: 2rem;
-		}
-	}
-
-	// АДАПТИВ ПОСЛЕ МОБИЛЬНОГО
-	@media (max-width: variables.$vp-1024) {
-		&__menu {
-			gap: 1rem;
-		}
-
-		&__menu-item {
-			padding: .5rem .5rem .5rem 0;
+		&__body {
+			height: 120px;
 		}
 
 		&__logo {
 			img {
 				width: 200px;
+				height: auto;
+			}
+		}
+	}
+
+
+	@media (max-width: variables.$vp-1024) {
+		&__body {
+			height: 80px;
+		}
+
+		&__logo {
+			img {
+				width: 180px;
 				height: auto;
 			}
 		}
@@ -106,26 +104,29 @@
 	@media (max-width: variables.$vp-768) {
 		&__logo {
 			img {
-				width: 150px;
+				width: 120px;
 				height: auto;
 			}
 		}
 
 		&__link {
 			margin-bottom: 0;
-			font-size: 2rem;
+		}
+
+		&__body {
+			justify-content: space-between;
 		}
 	}
 
 	// МЕНЮ
 	@media (max-width: variables.$vp-768) {
 		&__body {
-			height: 5.8333rem;
+			height: 60px;
 		}
 
 		&__burger {
-			width: 40px;
-			height: 40px;
+			width: 30px;
+			height: 30px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -136,8 +137,8 @@
 
 			span {
 				display: block;
-				width: 12px;
-				height: 12px;
+				width: 8px;
+				height: 8px;
 				background-color: variables.$white;
 				border-radius: 50%;
 				transition: all 0.2s ease;
@@ -150,7 +151,7 @@
 
 				span {
 					display: block;
-					width: 30px;
+					width: 25px;
 					height: 2px;
 					background-color: variables.$white;
 					transition: all 0.3s ease;
@@ -188,7 +189,7 @@
 			overflow: auto;
 			display: flex;
 			justify-content: center;
-			align-items: center;
+			align-items: flex-start;
 
 			&_active {
 				top: 0;
@@ -198,10 +199,12 @@
 		&__link {
 			margin-bottom: 2rem;
 			display: block;
+			font-size: 1rem;
 		}
 
 		&__menu {
 			display: block;
+			padding-top: 150px;
 		}
 	}
 }
