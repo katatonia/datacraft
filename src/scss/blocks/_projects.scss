@@ -5,13 +5,15 @@
 
 	&__item {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: center;
+		width: 250px;
+		height: 250px;
 	}
 
 	&__link {
-		width: 250px;
-		height: auto;
+		display: flex;
+		align-items: flex-end;
 
 		picture {
 			display: block;
@@ -27,7 +29,8 @@
 
 	&__list {
 		display: flex;
-        gap: 60px;
+        column-gap: 80px;
+		row-gap: 30px;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
@@ -38,10 +41,6 @@
 	}
 
     @media (max-width: variables.$vp-1366) {
-        &__link {
-			width: 200px;
-		}
-
         &__list {
             padding: 60px 40px;
             gap: 40px;
@@ -50,18 +49,26 @@
 
     @media (max-width: variables.$vp-1024) {
         &__list {
-            gap: 20px;
+            gap: 40px;
         }
     }
 
 	@media (max-width: variables.$vp-768) {
+		&__item {
+			width: 200px;
+			height: 200px;
+		}
+
 		&__list {
 			flex-direction: column;
-            padding: 20px;
+            padding: 40px 20px;
+			gap: 20px;
 		}
 
 		&__link {
-			width: 150px;
+			img {
+				height: 200px;
+			}
 		}
 	}
 }

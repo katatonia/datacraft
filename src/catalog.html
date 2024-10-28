@@ -145,8 +145,11 @@
                                         <button></button>
                                     </div>
                                 </div>
-                                <img class="catalog__heart" width="50" height="50" src="icons/heart.svg"
-                                    alt="Иконка сердечка">
+                                <div class="catalog__heart">
+                                    <svg width="30" height="30" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="icons/sprite.svg#heart"/>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="catalog__card">
                                 <div class="catalog__desc">
@@ -161,8 +164,7 @@
                                     имя...</p>
                                 <img class="catalog__qr" width="50" height="50" src="img/qr.png"
                                     alt="QR-код для продукта">
-                                <a class="catalog__btn button"
-                                    href="card-page.html">Подробнее</a>
+                                <a class="catalog__btn button" href="card-page.html">Подробнее</a>
                             </div>
                         </li>
                     </ul>
