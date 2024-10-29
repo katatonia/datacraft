@@ -160,8 +160,7 @@
 	@media (max-width: variables.$vp-1366) {
 		&__grid {
 			grid-template-columns: repeat(1, minmax(280px, 1fr));
-			padding: 2rem;
-			gap: 5rem;
+			padding: 40px 20px;
 		}
 
 		&__grid-subtitle {
