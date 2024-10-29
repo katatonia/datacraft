@@ -9,38 +9,27 @@
 	gap: 1rem;
 
 	&__link {
-		padding-right: 3.5rem;
 		display: flex;
 		align-items: center;
 		font-size: 1.5rem;
+		fill: variables.$white;
 
-		&_phone {
-			position: relative;
-
-			&::before {
-				content: "";
-				position: absolute;
-				width: 30px;
-				height: 30px;
-				background-image: url("../icons/phone.svg");
-				background-repeat: no-repeat;
-				right: 0;
-				z-index: 3;
-			}
+		span {
+			padding-left: 1rem;
+			cursor: pointer;
+			transition: .3s;
 		}
 
-		&_mail {
-			position: relative;
+		svg {
+			width: 30px;
+			height: 30px;
+			fill: variables.$white;
+			transition: .3s;
+		}
 
-			&::before {
-				content: "";
-				position: absolute;
-				width: 30px;
-				height: 30px;
-				background-image: url("../icons/mail.svg");
-				background-repeat: no-repeat;
-				right: 0;
-				z-index: 3;
+		&:hover {
+			svg {
+				fill: variables.$tomato;
 			}
 		}
 	}
@@ -48,12 +37,6 @@
 	@media (max-width: variables.$vp-1366) {
 		&__link {
 			font-size: 1rem;
-			padding-right: 2rem;
-
-			&::before {
-				width: 20px;
-				height: 20px;
-			}
 		}
 	}
 }

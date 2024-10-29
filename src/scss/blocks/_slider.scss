@@ -19,12 +19,6 @@
 		flex-grow: 1;
 	}
 
-	&__title {
-		display: flex;
-		justify-content: space-between;
-		font-size: 1.5rem;
-	}
-
 	&__heart {
 		cursor: pointer;
 		position: absolute;
@@ -32,14 +26,9 @@
 		left: 1rem;
 	}
 
-	&__subtitle {
-		font-size: 1.2rem;
-	}
-
 	&__slides {
 		display: flex;
 		transition: transform 0.5s ease;
-		margin: 1rem 0;
 
 		&_catalog {
 			margin: 0;
@@ -55,10 +44,29 @@
 		}
 	}
 
+	&__like {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		cursor: pointer;
+		transition: .3s;
+
+		&_active{
+			fill: variables.$tomato;
+		}
+
+		&:hover {
+			fill: variables.$tomato;
+		}
+	}
+
 	&__btns {
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+		margin-top: 20px;
 
 		&_catalog {
 			display: flex;
@@ -90,17 +98,10 @@
 		margin-right: 2.3rem;
 	}
 
-	@media (max-width: variables.$vp-1366) {
-		&__heart {
-			width: 40px;
-			height: 40px;
-		}
-	}
-
-	@media (max-width: variables.$vp-768) {
-		&__heart {
-			width: 30px;
-			height: 30px;
+	@media (max-width: variables.$vp-1024) {
+		&__like {
+			width: 25px;
+			height: 25px;
 		}
 	}
 }

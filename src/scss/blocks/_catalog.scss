@@ -100,11 +100,6 @@
 		font-size: 1.5rem;
 		transform: rotate(90deg);
 		cursor: pointer;
-
-		&:hover {
-			background-color: variables.$white;
-			color: variables.$black;
-		}
 	}
 
 	&__select-item {

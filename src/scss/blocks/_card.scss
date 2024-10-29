@@ -12,6 +12,7 @@
 	&__wrapper {
 		padding: 10rem 5rem 15rem;
 		position: relative;
+		max-width: 1600px;
 	}
 
 	&__grid {
@@ -23,9 +24,25 @@
 		background-color: rgba(1, 1, 1, 0.5);
 	}
 
+	&__grid-left {
+		display: flex;
+		flex-direction: column;
+		max-width: 500px;
+	}
+
 	&__about {
 		display: flex;
 		flex-direction: column;
+	}
+
+	&__grid-title {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+
+	&__grid-subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
 	}
 
 	&__brew {
@@ -85,32 +102,6 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 0 2rem 0;
-
-		&:first-child {
-			padding-left: 0;
-		}
-
-		&:last-child {
-			padding-right: 0;
-		}
-
-		&:nth-child(2) {
-			position: relative;
-
-			&::before,
-			&::after {
-				content: "|";
-				position: absolute;
-			}
-
-			&::before {
-				left: 0;
-			}
-
-			&::after {
-				right: 0;
-			}
-		}
 	}
 
 	&__rate {
@@ -127,29 +118,16 @@
 		flex-direction: column;
 		padding: 0 1rem 0;
 
-		&:first-child {
-			padding-left: 0;
-		}
-
-		&:last-child {
-			padding-right: 0;
-		}
-
-		&:nth-child(2) {
-			position: relative;
-
-			&::before,
-			&::after {
-				content: "|";
-				position: absolute;
+		&_untappd {
+			a {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
 			}
 
-			&::before {
-				left: 0;
-			}
-
-			&::after {
-				right: 0;
+			span {
+				cursor: pointer;
+				border-bottom: 1px solid variables.$white;
 			}
 		}
 	}
