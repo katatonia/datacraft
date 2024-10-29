@@ -24,12 +24,19 @@
         }
     }
 
-    @media (max-width: variables.$vp-1366) {
+    @media (max-width: variables.$vp-1024) {
         &__link {
+            width: 30px;
+            height: 30px;
+
             svg {
                 width: 30px;
                 height: 30px;
             }
         }
+    }
+
+    @media (max-width: variables.$vp-768) {
+        gap: 10px;
     }
 }
