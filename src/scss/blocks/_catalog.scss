@@ -136,14 +136,8 @@
 
 		button {
 			padding: 10px;
-			background-color: rgba(0, 0, 0, 0.5);
-			border: 1px solid variables.$white;
 			cursor: pointer;
 			border-radius: 0;
-
-			&:hover {
-				background-color: rgba(0, 0, 0, 0.7);
-			}
 		}
 	}
 
@@ -222,6 +216,10 @@
 	&__btn {
 		margin: 0 auto;
 		padding: 0.7rem;
+
+		&:hover {
+			opacity: .7;
+		}
 	}
 
 	&__icons {

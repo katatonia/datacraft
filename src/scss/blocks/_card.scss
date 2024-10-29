@@ -27,7 +27,7 @@
 	&__grid-left {
 		display: flex;
 		flex-direction: column;
-		max-width: 500px;
+		margin: 0 auto;
 	}
 
 	&__about {
@@ -49,6 +49,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
+		width: 100%;
 
 		span {
 			font-size: 1.5rem;
@@ -123,11 +124,12 @@
 				display: flex;
 				align-items: center;
 				flex-direction: column;
+				color: variables.$amber;
 			}
 
 			span {
 				cursor: pointer;
-				border-bottom: 1px solid variables.$white;
+				border-bottom: 1px solid variables.$amber;
 			}
 		}
 	}
@@ -160,6 +162,10 @@
 			grid-template-columns: repeat(1, minmax(280px, 1fr));
 			padding: 2rem;
 			gap: 5rem;
+		}
+
+		&__grid-subtitle {
+			font-size: 1rem;
 		}
 
 		&__reviews-btn {

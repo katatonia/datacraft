@@ -10,7 +10,7 @@
 	.pagination__btn {
 		width: 50px;
 		height: 50px;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: variables.$black;
 		color: variables.$white;
 		cursor: pointer;
 		border: 1px solid variables.$white;
@@ -18,10 +18,9 @@
 		align-items: center;
 		justify-content: center;
 		font-weight: 600;
-		transition: .3s;
 
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.7);
+			opacity: .7;
 		}
 
 		&_prev,
