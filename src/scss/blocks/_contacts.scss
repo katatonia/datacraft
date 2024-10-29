@@ -35,8 +35,8 @@
 		}
 
 		svg {
-			width: 20px;
-			height: 20px;
+			width: 30px;
+			height: 30px;
 			fill: variables.$white;
 		}
 	}
@@ -44,6 +44,13 @@
 	@media (max-width: variables.$vp-1366) {
 		&__link {
 			font-size: 1rem;
+		}
+	}
+
+	@media (max-width: variables.$vp-768) {
+		svg {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
