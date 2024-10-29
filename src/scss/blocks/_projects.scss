@@ -19,7 +19,7 @@
 
 	&__list {
 		display: flex;
-        column-gap: 80px;
+		column-gap: 80px;
 		row-gap: 30px;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -27,32 +27,37 @@
 		padding: 80px 60px;
 		position: relative;
 		background-color: rgba(255, 255, 255, 0.5);
-        margin-bottom: 4rem;
+		margin-bottom: 4rem;
 	}
 
-    @media (max-width: variables.$vp-1366) {
-        &__list {
-            padding: 60px 40px;
-            gap: 40px;
+	@media (max-width: variables.$vp-1366) {
+		&__list {
+			padding: 60px 40px;
+			gap: 40px;
 			justify-content: space-around;
-        }
-    }
+		}
+	}
 
-    @media (max-width: variables.$vp-1024) {
-        &__list {
-            gap: 40px;
-        }
-    }
+	@media (max-width: variables.$vp-1024) {
+		&__list {
+			gap: 40px;
+		}
+	}
 
 	@media (max-width: variables.$vp-768) {
-		&__item {
+		&__link {
 			width: 150px;
 			height: 150px;
+
+			img {
+				width: 150px;
+				height: 150px;
+			}
 		}
 
 		&__list {
 			flex-direction: column;
-            padding: 40px 20px;
+			padding: 40px 20px;
 			gap: 20px;
 		}
 	}
