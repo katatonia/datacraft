@@ -4,10 +4,11 @@ let endX = 0;
 
 const showSlide = (index) => {
     const slides = document.querySelectorAll('.slider__slide');
+    const totalSlides = slides.length;
 
-    // Проверяем границы и корректируем индекс
-    if (index >= slides.length) {
-        currentSlide = slides.length - 1; // Остаемся на последнем слайде
+    // Обновляем текущий слайд, проверяя границы
+    if (index >= totalSlides) {
+        currentSlide = totalSlides - 1; // Остаемся на последнем слайде
     } else if (index < 0) {
         currentSlide = 0; // Остаемся на первом слайде
     } else {
@@ -18,13 +19,16 @@ const showSlide = (index) => {
     document.querySelector('.slider__slides').style.transform = `translateX(${offset}%)`;
 };
 
-// Функция для переключения слайдов
+// Функция для переключения слайдов с ограничениями
 const moveSlide = (step) => {
     const slides = document.querySelectorAll('.slider__slide');
     const newSlideIndex = currentSlide + step;
 
-    // Проверяем, не вышли ли за границы слайдов
-    if (newSlideIndex >= 0 && newSlideIndex < slides.length) {
+    if (currentSlide === 0 && step > 0) {
+        // На первом слайде можно листать только вперед
+        showSlide(newSlideIndex);
+    } else if (currentSlide === slides.length - 1 && step < 0) {
+        // На последнем слайде можно листать только назад
         showSlide(newSlideIndex);
     }
 };

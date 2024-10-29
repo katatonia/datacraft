@@ -14,7 +14,7 @@
 		color: variables.$white;
 		border-radius: 5px;
 		cursor: pointer;
-		border: 2px solid variables.$white;
+		border: 1px solid variables.$white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -43,10 +43,6 @@
 				background-position: center;
 				transform: rotate(-90deg);
 			}
-		}
-
-		&_prev.hidden {
-			visibility: hidden;
 		}
 
 		&_next {
