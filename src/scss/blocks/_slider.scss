@@ -22,7 +22,7 @@
 	&__title {
 		display: flex;
 		justify-content: space-between;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	&__heart {
@@ -33,7 +33,7 @@
 	}
 
 	&__subtitle {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 	&__slides {
@@ -79,7 +79,7 @@
 
 			button {
 				width: 5rem;
-				height: 3px;
+				height: 2px;
 				background-color: variables.$black;
 				border-radius: 5px;
 			}

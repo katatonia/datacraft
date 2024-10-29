@@ -7,7 +7,7 @@
 	flex-direction: column;
 	gap: 1rem;
 	margin: 0 auto;
-    padding: 11rem 0 0;
+    padding: 40px 0 0;
 
 	@media (max-width: variables.$vp-1024) {
 		max-width: 600px;
@@ -21,7 +21,6 @@
 		padding: 1rem 2rem;
 		background-color: rgba(0, 0, 0 , .5);
 		width: fit-content;
-		border-radius: 5px;
 		margin-left: auto;
 	}
 
@@ -33,7 +32,6 @@
 		padding: 2rem;
 		color: variables.$white;
 		background-color: rgba(0, 0, 0 , .5);
-		border-radius: 5px;
 	}
 
 	&__info {

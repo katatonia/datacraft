@@ -5,14 +5,13 @@
 	gap: 1rem;
 	align-items: center;
 	justify-content: center;
-	margin: 4rem 0;
+	margin: 40px 0;
 
 	.pagination__btn {
-		width: 70px;
-		height: 70px;
+		width: 50px;
+		height: 50px;
 		background-color: rgba(0, 0, 0, 0.5);
 		color: variables.$white;
-		border-radius: 5px;
 		cursor: pointer;
 		border: 1px solid variables.$white;
 		display: flex;
