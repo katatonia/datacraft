@@ -8,22 +8,6 @@
 	margin: 0 auto;
 	padding: 40px 0 0;
 
-	@media (max-width: variables.$vp-1024) {
-		max-width: 600px;
-	}
-
-	&__title {
-		font: {
-			size: 1.5rem;
-		}
-		color: variables.$white;
-		padding: 1rem 2rem;
-		background-color: rgba(0, 0, 0, 0.5);
-		width: fit-content;
-		margin-left: auto;
-		margin-bottom: 25px;
-	}
-
 	&__comment {
 		width: 100%;
 		display: flex;
@@ -113,5 +97,9 @@
 	&__rating-value {
 		padding: 0 15px 0 10px;
 		font-size: 1rem;
+	}
+
+	@media (max-width: variables.$vp-1024) {
+		max-width: 600px;
 	}
 }

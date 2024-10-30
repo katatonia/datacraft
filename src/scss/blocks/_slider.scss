@@ -50,9 +50,9 @@
 		top: 20px;
 		left: 20px;
 		cursor: pointer;
-		transition: .3s;
+		transition: 0.3s;
 
-		&_active{
+		&_active {
 			fill: variables.$scarlet;
 		}
 	}
@@ -63,7 +63,7 @@
 		gap: 1rem;
 		margin-top: 20px;
 
-		&_catalog {
+		&_lines {
 			display: flex;
 			gap: 0;
 			position: absolute;
@@ -72,20 +72,21 @@
 			justify-content: center;
 			width: 100%;
 		}
+
+		&_card {
+			display: none;
+		}
 	}
 
 	&__button {
 		cursor: pointer;
 
-		&_catalog {
-			padding: 1rem;
-
-			button {
-				width: 5rem;
-				height: 2px;
-				background-color: variables.$black;
-				border-radius: 5px;
-			}
+		&_line {
+			margin: 1rem;
+			width: 5rem;
+			height: 2px;
+			background-color: variables.$black;
+			border-radius: 5px;
 		}
 	}
 
@@ -101,8 +102,15 @@
 	}
 
 	@media (max-width: variables.$vp-768) {
-		&__btns {
-			display: none;
+		&__button {
+			img {
+				display: none;
+			}
+		}
+
+		&__btns_card {
+			bottom: 2rem;
+			display: flex;
 		}
 	}
 }

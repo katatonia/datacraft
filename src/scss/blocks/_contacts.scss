@@ -10,13 +10,12 @@
 
 	&__link {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		font-size: 1.5rem;
 		fill: variables.$white;
 		gap: 15px;
 
 		span {
-			margin-bottom: 3px;
 			cursor: pointer;
 			display: block;
 			position: relative;

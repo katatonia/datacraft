@@ -226,6 +226,14 @@
 		align-items: flex-end;
 	}
 
+	&__page {
+		display: none;
+
+		&_active {
+			display: block;
+		}
+	}
+
 	@media (max-width: variables.$vp-1680) {
 		&__list {
 			grid-template-columns: repeat(3, 1fr);
