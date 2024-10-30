@@ -19,4 +19,8 @@
 	@media (max-width: variables.$vp-1366) {
         padding: 40px 20px;
     }
+
+	@media (max-width: variables.$vp-768) {
+        flex-direction: column;
+    }
 }
