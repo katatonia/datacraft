@@ -13,7 +13,10 @@ document.querySelectorAll('.slider').forEach((sliderElement) => {
     };
 
     const moveSlide = (step) => {
-        showSlide(currentSlide + step);
+        const newSlideIndex = currentSlide + step;
+        if (newSlideIndex >= 0 && newSlideIndex < slides.length) {
+            showSlide(newSlideIndex);
+        }
     };
 
     showSlide(currentSlide);
@@ -31,9 +34,9 @@ document.querySelectorAll('.slider').forEach((sliderElement) => {
         const swipeDistance = endX - startX;
 
         if (swipeDistance > 50) {
-            moveSlide(-1);
+            moveSlide(-1); // Вправо
         } else if (swipeDistance < -50) {
-            moveSlide(1);
+            moveSlide(1); // Влево
         }
         startX = endX = 0; // Сброс значений после свайпа
     });

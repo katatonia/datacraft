@@ -18,7 +18,7 @@
 		flex-grow: 1;
 	}
 
-	&__heart {
+	&__like {
 		cursor: pointer;
 		position: absolute;
 		top: 1rem;
@@ -50,7 +50,6 @@
 		top: 20px;
 		left: 20px;
 		cursor: pointer;
-		transition: 0.3s;
 
 		&_active {
 			fill: variables.$scarlet;
