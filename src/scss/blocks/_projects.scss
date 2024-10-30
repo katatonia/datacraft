@@ -8,57 +8,45 @@
 		align-items: flex-end;
 		justify-content: center;
 		width: 250px;
-		height: 250px;
+		height: 150px;
 
 		img {
 			width: 100%;
 			height: auto;
 			object-fit: contain;
+			width: 250px;
+			height: 150px;
 		}
 	}
 
 	&__list {
 		display: flex;
-		column-gap: 80px;
-		row-gap: 30px;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		padding: 80px 60px;
 		position: relative;
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: hsla(0, 0%, 100%, .5);
 		margin-bottom: 4rem;
+		padding: 60px 40px;
+		gap: 60px;
 	}
 
 	@media (max-width: variables.$vp-1366) {
 		&__list {
-			padding: 60px 40px;
 			gap: 40px;
-			justify-content: space-around;
+			padding: 40px 20px;
 		}
-	}
 
-	@media (max-width: variables.$vp-1024) {
-		&__list {
-			gap: 40px;
+		&__link {
+			width: 150px;
+			height: 150px;
 		}
 	}
 
 	@media (max-width: variables.$vp-768) {
-		&__link {
-			width: 150px;
-			height: 150px;
-
-			img {
-				width: 150px;
-				height: 150px;
-			}
-		}
-
 		&__list {
-			flex-direction: column;
-			padding: 40px 20px;
 			gap: 20px;
+			flex-direction: column;
 		}
 	}
 }
