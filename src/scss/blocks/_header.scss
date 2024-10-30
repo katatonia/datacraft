@@ -1,4 +1,4 @@
-@use "base/variables"; // version 1
+@use "base/variables";
 
 .header {
 	position: fixed;
@@ -232,25 +232,25 @@
 
 			&_home {
 				&::after {
-					background-image: url("../../icons/home.svg");
+					background-image: url("../icons/home.svg");
 				}
 			}
 
 			&_catalog {
 				&::after {
-					background-image: url("../../icons/catalog.svg");
+					background-image: url("../icons/catalog.svg");
 				}
 			}
 
 			&_favorites {
 				&::after {
-					background-image: url("../../icons/heart.svg");
+					background-image: url("../icons/heart.svg");
 				}
 			}
 
 			&_sign-in {
 				&::after {
-					background-image: url("../../icons/sign-in.svg");
+					background-image: url("../icons/sign-in.svg");
 				}
 			}
 		}
