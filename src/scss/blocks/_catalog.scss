@@ -260,6 +260,10 @@
 		&__search {
 			width: 100%;
 
+			form {
+				flex-direction: column;
+			}
+
 			input {
 				margin: 0 auto;
 			}

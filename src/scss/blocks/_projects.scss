@@ -25,10 +25,6 @@
 		gap: 40px;
 		max-width: 1880px;
 		margin: 0 auto;
-
-		&_hidden {
-			display: none;
-		}
 	}
 
 	@media (max-width: variables.$vp-1366) {
