@@ -1,21 +1,17 @@
 @use "base/variables";
 
 .projects {
-	background-color: variables.$white;
-
 	&__link {
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
-		width: 250px;
-		height: 150px;
+		width: 220px;
+		height: auto;
 
 		img {
 			width: 100%;
 			height: auto;
 			object-fit: contain;
-			width: 250px;
-			height: 150px;
 		}
 	}
 
@@ -25,21 +21,24 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		background-color: hsla(0, 0%, 100%, .5);
-		margin-bottom: 4rem;
-		padding: 60px 40px;
-		gap: 60px;
+		padding: 100px 40px;
+		gap: 40px;
+		max-width: 1880px;
+		margin: 0 auto;
+
+		&_hidden {
+			display: none;
+		}
 	}
 
 	@media (max-width: variables.$vp-1366) {
+		&__link {
+			width: 150px;
+		}
+
 		&__list {
 			gap: 40px;
 			padding: 40px 20px;
-		}
-
-		&__link {
-			width: 150px;
-			height: 150px;
 		}
 	}
 

@@ -1,17 +1,7 @@
 @use "base/variables";
 
 .card {
-	background-color: variables.$white;
-	background-image: url("../img/bg.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100%;
-	position: relative;
-
 	&__wrapper {
-		padding: 10rem 5rem 15rem;
-		position: relative;
 		max-width: 1600px;
 	}
 
@@ -79,14 +69,16 @@
 	}
 
 	&__style-list-title {
-		padding: 0.5rem;
-		background-color: variables.$black;
-		color: variables.$white;
-		font-size: 0.8889rem;
+		padding: 10px 10px 10px 1rem;
+		color: #fff;
+		font-size: 1.3rem;
+		border-bottom: 2px solid white;
 	}
 
 	&__style-list-text {
 		padding: 1rem;
+		background-color: rgba(255, 255, 255, 0.2);
+		height: 100%;
 	}
 
 	&__beer-profile {
@@ -195,10 +187,6 @@
 		&__bottom {
 			flex-direction: column;
 			align-items: center;
-		}
-
-		&__wrapper {
-			padding: 10rem 1rem 15rem;
 		}
 
 		&__qr {

@@ -2,16 +2,11 @@
 
 .connection {
 	display: flex;
-	gap: 3rem;
+	gap: 100px;
 	align-items: center;
-	padding: 40px;
+	padding: 40px 0;
 	width: 100%;
-	justify-content: space-between;
-	margin: auto;
-
-	@media (max-width: variables.$vp-1366) {
-        padding: 40px 20px;
-    }
+	justify-content: center;
 
 	@media (max-width: variables.$vp-768) {
         flex-direction: column;

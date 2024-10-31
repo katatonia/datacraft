@@ -52,7 +52,6 @@ html, body {
 }
 
 .container {
-    // max-width: 1880px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
@@ -66,6 +65,7 @@ html, body {
     width: 16.6667rem;
     max-width: 100%;
     background-color: variables.$black;
+    border: 1px solid variables.$white;
     color: variables.$white;
     display: flex;
     align-items: center;
@@ -76,7 +76,6 @@ html, body {
         size: 1rem;
         weight: 400;
     }
-    transition: .3s;
 
     &:hover {
         opacity: .7;
