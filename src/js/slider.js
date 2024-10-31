@@ -42,24 +42,24 @@ document.querySelectorAll('.slider').forEach((slider) => {
 
     // Добавляем поддержку свайпов для мобильных устройств
     let startX = 0;
-    let endX = 0;
 
     slides.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
     });
 
-    slides.addEventListener('touchmove', (e) => {
-        endX = e.touches[0].clientX;
-    });
-
-    slides.addEventListener('touchend', () => {
-        // Если свайп больше 50 пикселей, то проверяем направление
+    slides.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
         const swipeThreshold = 50; // Порог для определения свайпа
+
+        // Свайп влево — показываем следующий слайд
         if (startX - endX > swipeThreshold && currentSlide < slideItems.length - 1) {
-            currentSlide++; // Свайп влево — показываем следующий слайд
-        } else if (endX - startX > swipeThreshold && currentSlide > 0) {
-            currentSlide--; // Свайп вправо — показываем предыдущий слайд
+            currentSlide++;
+            updateSlide(currentSlide);
         }
-        updateSlide(currentSlide);
+        // Свайп вправо — показываем предыдущий слайд
+        else if (endX - startX > swipeThreshold && currentSlide > 0) {
+            currentSlide--;
+            updateSlide(currentSlide);
+        }
     });
 });
