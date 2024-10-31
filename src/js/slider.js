@@ -54,9 +54,10 @@ document.querySelectorAll('.slider').forEach((slider) => {
 
     slides.addEventListener('touchend', () => {
         // Если свайп больше 50 пикселей, то проверяем направление
-        if (startX > endX + 20 && currentSlide < slideItems.length - 1) {
+        const swipeThreshold = 50; // Порог для определения свайпа
+        if (startX - endX > swipeThreshold && currentSlide < slideItems.length - 1) {
             currentSlide++; // Свайп влево — показываем следующий слайд
-        } else if (startX < endX - 20 && currentSlide > 0) {
+        } else if (endX - startX > swipeThreshold && currentSlide > 0) {
             currentSlide--; // Свайп вправо — показываем предыдущий слайд
         }
         updateSlide(currentSlide);
