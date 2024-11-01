@@ -10,5 +10,7 @@
 
 	@media (max-width: variables.$vp-768) {
         flex-direction: column;
+		gap: 30px;
+		paddding: 20px 0;
     }
 }

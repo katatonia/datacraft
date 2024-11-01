@@ -41,7 +41,6 @@
 	@media (max-width: variables.$vp-768) {
 		&__list {
 			gap: 20px;
-			flex-direction: column;
 		}
 	}
 }

@@ -1,6 +1,7 @@
 document.querySelectorAll('.slider').forEach((slider) => {
     const slides = slider.querySelector('.slider__slides');
     const slideItems = slider.querySelectorAll('.slider__slide');
+    const lineBtns = slider.querySelectorAll('.slider__button-line'); // Все кнопки lineBtn
     let currentSlide = 0;
 
     function updateSlide(position) {
@@ -8,10 +9,16 @@ document.querySelectorAll('.slider').forEach((slider) => {
         slideItems.forEach((slide, index) => {
             slide.classList.toggle('active', index === position);
         });
+
         // Смещаем блок слайдов
         slides.style.transform = `translateX(-${position * 100}%)`;
 
-        // Обновляем состояние кнопок в зависимости от текущего слайда
+        // Обновляем состояние кнопок lineBtn
+        lineBtns.forEach((btn, index) => {
+            btn.classList.toggle('slider__button-line_active', index === position);
+        });
+
+        // Обновляем состояние кнопок навигации
         const nextBtn = slider.querySelector('.slider__button_next');
         const prevBtn = slider.querySelector('.slider__button_prev');
         nextBtn.disabled = position === slideItems.length - 1;
