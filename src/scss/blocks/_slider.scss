@@ -48,41 +48,19 @@
 		}
 	}
 
-	&__btns {
+	&__photo-btns {
 		display: flex;
 		justify-content: center;
-		gap: 1rem;
-		margin-top: 20px;
-
-		&_lines {
-			display: flex;
-			gap: 0;
-			position: absolute;
-			bottom: 0;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-		}
-
-		&_card {
-			display: none;
-		}
+		margin-top: 12px;
 	}
 
-	&__button {
-		cursor: pointer;
+	&__photo-btn {
 		padding: 12px;
-	}
+		cursor: pointer;
 
-	&__button-line {
-		display: block;
-		width: 50px;
-		height: 2px;
-		background-color: variables.$topaz;
-		border-radius: 5px;
-
-		&_active {
-			background-color: variables.$black;
+		span {
+			color: variables.$white;
+			padding-top: 5px;
 		}
 	}
 
@@ -90,16 +68,59 @@
 		margin-right: 2.3rem;
 	}
 
-	@media (max-width: variables.$vp-768) {
-		&__button {
-			img {
-				display: none;
-			}
+	&__line-btns_catalog {
+		display: flex;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		.slider__line-btn {
+			padding: 12px;
+			cursor: pointer;
 		}
 
-		&__btns_card {
-			bottom: 2rem;
+		.slider__line {
+			display: block;
+			width: 50px;
+			height: 2px;
+			background-color: variables.$topaz;
+			border-radius: 5px;
+
+			&_active {
+				background-color: variables.$black;
+			}
+		}
+	}
+
+	@media (max-width: variables.$vp-768) {
+		&__photo-btns {
+			display: none;
+		}
+
+		&__line-btns {
 			display: flex;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&__line-btn {
+			padding: 12px;
+			cursor: pointer;
+		}
+
+		&__line {
+			display: block;
+			width: 50px;
+			height: 2px;
+			background-color: variables.$topaz;
+			border-radius: 5px;
+
+			&_active {
+				background-color: variables.$black;
+			}
 		}
 	}
 }

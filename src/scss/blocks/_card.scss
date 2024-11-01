@@ -45,6 +45,11 @@
 			font-size: 1.5rem;
 			padding: 0.7rem;
 		}
+
+		a {
+			display: flex;
+			align-items: flex-end;
+		}
 	}
 
 	&__desc {
@@ -116,12 +121,12 @@
 				display: flex;
 				align-items: center;
 				flex-direction: column;
-				color: variables.$amber;
+				color: variables.$casablanca;
 			}
 
 			span {
 				cursor: pointer;
-				border-bottom: 1px solid variables.$amber;
+				border-bottom: 1px solid variables.$casablanca;
 			}
 		}
 	}
