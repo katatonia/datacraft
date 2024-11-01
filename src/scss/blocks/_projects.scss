@@ -5,7 +5,7 @@
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
-		width: 220px;
+		width: 150px;
 		height: auto;
 
 		img {
@@ -28,17 +28,17 @@
 	}
 
 	@media (max-width: variables.$vp-1366) {
-		&__link {
-			width: 150px;
-		}
-
 		&__list {
-			gap: 40px;
+			gap: 30px;
 			padding: 40px 20px;
 		}
 	}
 
 	@media (max-width: variables.$vp-768) {
+		&__link {
+			width: 100px;
+		}
+
 		&__list {
 			gap: 20px;
 		}
