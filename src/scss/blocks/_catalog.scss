@@ -48,7 +48,6 @@
 	}
 
 	&__select-header {
-		border: 1px solid variables.$white;
 		cursor: pointer;
 		display: flex;
 		padding: 5px 5px 5px 10px;
@@ -59,7 +58,9 @@
 	&__select-current {
 		cursor: pointer;
 		width: 100%;
-		font-size: .9rem;
+		font-size: 0.8889rem;
+		display: flex;
+		align-items: center;
 	}
 
 	&__select-icon {
@@ -102,7 +103,7 @@
 		padding: 10px;
 		margin-left: auto;
 		color: variables.$black;
-		font-size: .9rem;
+		font-size: 0.8889rem;
 
 		&:hover {
 			background-color: variables.$black;
@@ -153,17 +154,27 @@
 		margin: 0 auto;
 		width: 100%;
 		max-width: 300px;
+		font-size: 0.8889rem;
+	}
+
+	&__title {
+		font: {
+			size: 1rem;
+			weight: 600;
+		}
+		margin-bottom: 10px;
+		text-align: center;
 	}
 
 	&__subtitle {
-		text-align: left;
+		text-align: center;
 	}
 
 	&__card {
 		color: variables.$black;
 		background-color: white;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 1.5rem 1rem 1.5rem;
+		padding: 20px;
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
@@ -183,31 +194,27 @@
 		flex-direction: column;
 	}
 
-	&__title {
-		font: {
-			size: 1.5rem;
-			weight: 600;
-		}
-		margin-bottom: 0.5rem;
-		text-align: center;
-	}
-
 	&__brewery {
 		display: flex;
-		margin-top: 0.5rem;
+		margin-top: 15px;
 		cursor: pointer;
+		justify-content: center;
 
 		a {
 			display: flex;
-			gap: 15px;
+			gap: 10px;
 			align-items: center;
 			cursor: pointer;
+
+			span {
+				border-bottom: 1px solid variables.$black;
+			}
 		}
 	}
 
 	&__text {
 		text-align: center;
-		margin: 2rem 0;
+		margin: 20px 0;
 		font-weight: 300;
 	}
 
@@ -257,7 +264,6 @@
 
 		&__selects-title {
 			background-color: variables.$black;
-			border: 1px solid variables.$white;
 			font-size: 1rem;
 			position: relative;
 			display: flex;
@@ -270,13 +276,13 @@
 			&::after {
 				position: absolute;
 				content: "";
-				width: 20px;
-				height: 20px;
+				width: 15px;
+				height: 15px;
 				background-image: url(../icons/arrow.svg);
 				background-repeat: no-repeat;
 				background-position: center;
 				transform: rotate(-180deg);
-				right: 10px;
+				right: 15px;
 			}
 		}
 
@@ -332,6 +338,10 @@
 
 		&__page {
 			grid-template-columns: 1fr;
+		}
+
+		&__select {
+			max-width: 100%;
 		}
 	}
 }

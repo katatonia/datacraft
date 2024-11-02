@@ -1,16 +1,12 @@
 @use "base/variables";
 
 .card {
-	&__wrapper {
-		max-width: 1600px;
-	}
-
 	&__grid {
 		display: grid;
 		color: variables.$white;
-		grid-template-columns: 1fr 1fr;
-		gap: 2.5rem;
-		padding: 3rem;
+		grid-template-columns: minmax(200px, 500px) 1fr;
+		gap: 35px;
+		padding: 40px 30px;
 		background-color: rgba(1, 1, 1, 0.5);
 	}
 
@@ -26,12 +22,11 @@
 	}
 
 	&__grid-title {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-bottom: 10px;
 	}
 
 	&__grid-subtitle {
-		font-size: 1.5rem;
 		margin-bottom: 20px;
 	}
 
@@ -40,59 +35,65 @@
 		justify-content: flex-end;
 		align-items: flex-end;
 		width: 100%;
+		margin-bottom: 20px;
 
 		span {
-			font-size: 1.5rem;
-			padding: 0.7rem;
+			padding: 0 10px;
 		}
 
 		a {
 			display: flex;
 			align-items: flex-end;
 		}
+
+		img {
+			width: 65px;
+		}
 	}
 
 	&__desc {
-		margin: 2rem 0;
+		margin-bottom: 20px;
 	}
 
 	&__beer-desc {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 3rem;
+		display: flex;
+		gap: 20px;
+		height: 100%;
 	}
 
 	&__style-list {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: stretch;
+		justify-content: space-between;
 
 		li {
 			display: flex;
 			flex-direction: column;
-			height: 100%;
+			width: 48%;
 		}
 	}
 
 	&__style-list-title {
-		padding: 10px 10px 10px 1rem;
+		padding: 10px;
 		color: #fff;
-		font-size: 1.3rem;
-		border-bottom: 2px solid white;
+		border-bottom: 1px solid white;
 	}
 
 	&__style-list-text {
-		padding: 1rem;
+		padding: 10px 10px 20px;
 		background-color: rgba(255, 255, 255, 0.2);
 		height: 100%;
+		font-size: 0.8889rem;
 	}
 
 	&__beer-profile {
 		display: flex;
-		font: {
-			size: 2rem;
-		}
+		font-size: 2rem;
 		justify-content: center;
-		margin: 2rem 0;
+		margin: 20px 0;
 	}
 
 	&__beer-profile-item {
@@ -143,29 +144,43 @@
 	}
 
 	&__rate-btn {
-		padding: 0.7rem;
-		margin: 0 auto;
+		padding: 10px;
 	}
 
 	&__bottom {
 		display: flex;
-		justify-content: space-between;
 		align-items: flex-end;
-		gap: 2rem;
+		justify-content: space-between;
+		margin-top: auto;
+	}
+
+	&__qr {
+		width: 65px;
 	}
 
 	@media (max-width: variables.$vp-1366) {
-		&__grid {
-			grid-template-columns: repeat(1, minmax(280px, 1fr));
-			padding: 40px 20px;
-		}
-
 		&__grid-subtitle {
 			font-size: 1rem;
 		}
 
 		&__reviews-btn {
 			display: none;
+		}
+	}
+
+	@media (max-width: variables.$vp-1024) {
+		&__grid {
+			grid-template-columns: 1fr;
+		}
+
+		&__style-list {
+			li {
+				width: 100%;
+			}
+		}
+
+		&__bottom {
+			gap: 20px;
 		}
 	}
 

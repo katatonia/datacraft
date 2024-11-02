@@ -38,5 +38,15 @@
 
     @media (max-width: variables.$vp-768) {
         gap: 10px;
+
+        &__link {
+            width: 20px;
+            height: 20px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	max-width: 500px;
 
 	&_catalog {
 		color: variables.$black;
@@ -51,11 +52,11 @@
 	&__photo-btns {
 		display: flex;
 		justify-content: center;
-		margin-top: 12px;
+		margin-top: 10px;
+		gap: 10px;
 	}
 
 	&__photo-btn {
-		padding: 12px;
 		cursor: pointer;
 
 		span {
