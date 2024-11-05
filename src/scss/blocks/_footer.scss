@@ -1,5 +1,14 @@
+@use "base/variables";
+
 .footer {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     position: relative;
     text-align: center;
+    height: 120px;
+    display: flex;
+    flex: 0;
+
+    @media (max-width: variables.$vp-1024) {
+        height: 80px;
+    }
 }

@@ -5,6 +5,7 @@ const selectsTitle = document.querySelector('.catalog__selects-title');
 const toggleSelects = () => {
     selectsTitle.addEventListener('click', () => {
         selects.classList.toggle('catalog__selects_active');
+        selectsTitle.classList.toggle('catalog__selects-title_active');
     })
 };
 

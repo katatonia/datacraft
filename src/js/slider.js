@@ -52,7 +52,7 @@ document.querySelectorAll('.slider').forEach((slider) => {
 
     slides.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
-    });
+    }, { passive: true });
 
     slides.addEventListener('touchend', (e) => {
         const endX = e.changedTouches[0].clientX;
@@ -68,5 +68,5 @@ document.querySelectorAll('.slider').forEach((slider) => {
             currentSlide--;
             updateSlide(currentSlide);
         }
-    });
+    }, { passive: true });
 });
