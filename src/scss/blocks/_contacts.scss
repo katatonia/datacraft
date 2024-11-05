@@ -5,7 +5,7 @@
 	flex-direction: column;
 	color: variables.$white;
 	z-index: 3;
-	align-items: flex-end;
+	align-items: flex-start;
 	gap: 20px;
 
 	&__link {
