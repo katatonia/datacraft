@@ -44,4 +44,8 @@
 			font-size: 1rem;
 		}
 	}
+
+	@media (max-width: variables.$vp-768) {
+		gap: 10px;
+	}
 }

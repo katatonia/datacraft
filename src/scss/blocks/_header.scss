@@ -118,6 +118,13 @@
 
 	// МЕНЮ
 	@media (max-width: variables.$vp-768) {
+		&_active {
+			&::before {
+				background-color: variables.$black;
+				border-bottom: 1px solid variables.$white;
+			}
+		}
+
 		&__body {
 			height: 80px;
 		}
@@ -177,7 +184,7 @@
 			position: fixed;
 			top: 80px;
 			right: -100%;
-			width: 100%;
+			width: 80%;
 			height: 100%;
 			padding: 20px;
 			background-color: variables.$black;
@@ -196,18 +203,19 @@
 
 		&__link {
 			display: block;
-			font-size: 1.5rem;
 		}
 
 		&__menu {
-			display: block;
-			padding-top: 100px;
+			display: flex;
+			flex-direction: column;
+			padding-top: 80px;
+			gap: 20px;
 			width: 100%;
 		}
 
 		&__menu-item {
 			position: relative;
-			padding: 30px 50px 30px 50px;
+			padding: 30px 50px 0 50px;
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
@@ -216,14 +224,12 @@
 				position: absolute;
 				content: "";
 				background-repeat: no-repeat;
-				top: 0;
 				right: 0;
+				bottom: 0;
 				z-index: 3;
 				width: 20px;
 				height: 20px;
 				vertical-align: middle;
-				top: 50%;
-				transform: translateY(-50%);
 				margin-right: 10px;
 			}
 
