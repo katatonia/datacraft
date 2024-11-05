@@ -47,9 +47,11 @@
 		padding: 0.5rem;
 		cursor: pointer;
 
-		&:hover {
-			.header__link {
-				border-bottom: 2px solid variables.$white;
+		@media (min-width: 769px) {
+			&:hover {
+				.header__link {
+					border-bottom: 2px solid variables.$white;
+				}
 			}
 		}
 	}
@@ -116,12 +118,6 @@
 
 	// МЕНЮ
 	@media (max-width: variables.$vp-768) {
-		&_active {
-			&:before {
-				border-bottom: 1px solid variables.$white;
-			}
-		}
-
 		&__body {
 			height: 80px;
 		}
@@ -179,13 +175,12 @@
 
 		&__nav {
 			position: fixed;
-			top: -100%;
-			left: 0;
+			top: 80px;
+			right: -100%;
 			width: 100%;
 			height: 100%;
 			padding: 20px;
-			background-color: rgba(0, 0, 0, 0.5);
-			backdrop-filter: blur(20px);
+			background-color: variables.$black;
 			text-align: right;
 			color: variables.$white;
 			transition: all 0.3s ease;
@@ -195,7 +190,7 @@
 			align-items: flex-start;
 
 			&_active {
-				top: 0;
+				right: 0;
 			}
 		}
 

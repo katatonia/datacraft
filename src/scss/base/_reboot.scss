@@ -50,6 +50,17 @@ textarea {
 	resize: none;
 }
 
+span,
+div {
+    cursor: default;
+}
+
 input {
 	outline: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }

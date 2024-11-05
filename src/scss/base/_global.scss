@@ -14,6 +14,7 @@ html, body {
     scroll-behavior: smooth;
     background-color: variables.$black;
     color: variables.$white;
+    overflow-x: hidden;
 
     @media (max-width: variables.$vp-1024) {
         font-size: 16px;
@@ -22,18 +23,4 @@ html, body {
     @media (max-width: variables.$vp-768) {
         font-size: 14px;
     }
-}
-
-span,
-div {
-    cursor: default;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-	-webkit-appearance:none;
-    -webkit-border-radius:0px;
-    border-radius: 0;
 }

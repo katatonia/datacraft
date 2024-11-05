@@ -198,7 +198,6 @@
 		display: flex;
 		margin-top: 15px;
 		cursor: pointer;
-		justify-content: center;
 
 		a {
 			display: flex;
@@ -213,9 +212,7 @@
 	}
 
 	&__text {
-		text-align: center;
 		margin: 20px 0;
-		font-weight: 300;
 	}
 
 	&__qr {

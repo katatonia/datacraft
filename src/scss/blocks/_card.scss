@@ -4,7 +4,7 @@
 	&__grid {
 		display: grid;
 		color: variables.$white;
-		grid-template-columns: minmax(200px, 500px) 1fr;
+		grid-template-columns: minmax(350px, 500px) 1fr;
 		gap: 35px;
 		padding: 40px 30px;
 		background-color: rgba(1, 1, 1, 0.5);
