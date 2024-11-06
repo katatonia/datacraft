@@ -62,11 +62,13 @@ document.querySelectorAll('.slider').forEach((slider) => {
         if (startX - endX > swipeThreshold && currentSlide < slideItems.length - 1) {
             currentSlide++;
             updateSlide(currentSlide);
+            console.log('свайп влево');
         }
         // Свайп вправо — показываем предыдущий слайд
         else if (endX - startX > swipeThreshold && currentSlide > 0) {
             currentSlide--;
             updateSlide(currentSlide);
+            console.log('свайп вправо');
         }
     }, { passive: true });
 });
