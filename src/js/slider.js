@@ -28,23 +28,22 @@ document.querySelectorAll('.slider').forEach((slider) => {
     // Инициализация начального состояния слайдера
     updateSlide(currentSlide);
 
-    // Обработчики для кнопок
-    document.querySelectorAll('.slider__btn_next').forEach((nextBtn) => {
-        nextBtn.addEventListener('click', () => {
-            if (nextBtn.closest('.slider') === slider && currentSlide < slideItems.length - 1) {
-                currentSlide++;
-                updateSlide(currentSlide);
-            }
-        });
+    // Обработчики для кнопок навигации
+    const nextBtn = slider.querySelector('.slider__btn_next');
+    const prevBtn = slider.querySelector('.slider__btn_prev');
+
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < slideItems.length - 1) {
+            currentSlide++;
+            updateSlide(currentSlide);
+        }
     });
 
-    document.querySelectorAll('.slider__btn_prev').forEach((prevBtn) => {
-        prevBtn.addEventListener('click', () => {
-            if (prevBtn.closest('.slider') === slider && currentSlide > 0) {
-                currentSlide--;
-                updateSlide(currentSlide);
-            }
-        });
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateSlide(currentSlide);
+        }
     });
 
     // Добавляем поддержку свайпов для мобильных устройств
