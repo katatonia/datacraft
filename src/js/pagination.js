@@ -43,3 +43,5 @@ setupPagination('.catalog__page', '.pagination__btn_prev', '.pagination__btn_nex
 'pagination__btn_disable');
 setupPagination('.reviews__page', '.pagination__btn_prev', '.pagination__btn_next',  'reviews__page_active',     // Класс для активной страницы
 'pagination__btn_disable');
+setupPagination('.favorites__page', '.pagination__btn_prev', '.pagination__btn_next',  'favorites__page_active',     // Класс для активной страницы
+'pagination__btn_disable');
