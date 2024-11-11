@@ -15,6 +15,7 @@ html, body {
     background-color: variables.$black;
     color: variables.$white;
     overflow-x: hidden;
+    scrollbar-width: none;
 
     @media (max-width: variables.$vp-1024) {
         font-size: 16px;
