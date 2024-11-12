@@ -10,8 +10,8 @@
 
     &__link {
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 24px;
+        height: 24px;
         fill: variables.$white;
 
         &:hover {
@@ -19,34 +19,12 @@
         }
 
         svg {
-            width: 40px;
-            height: 40px;
-        }
-    }
-
-    @media (max-width: variables.$vp-1024) {
-        &__link {
-            width: 30px;
-            height: 30px;
-
-            svg {
-                width: 30px;
-                height: 30px;
-            }
+            width: 24px;
+            height: 24px;
         }
     }
 
     @media (max-width: variables.$vp-768) {
         gap: 10px;
-
-        &__link {
-            width: 20px;
-            height: 20px;
-
-            svg {
-                width: 20px;
-                height: 20px;
-            }
-        }
     }
 }
