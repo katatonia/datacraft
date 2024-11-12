@@ -8,7 +8,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: "SourceCodePro", "Arial", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
@@ -16,10 +16,6 @@ html, body {
     color: variables.$white;
     overflow-x: hidden;
     scrollbar-width: none;
-
-    @media (max-width: variables.$vp-1024) {
-        font-size: 16px;
-    }
 
     @media (max-width: variables.$vp-768) {
         font-size: 14px;
