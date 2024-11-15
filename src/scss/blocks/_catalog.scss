@@ -1,6 +1,8 @@
 @use "base/variables";
 
 .catalog {
+	padding: 200px 0 100px;
+
 	&__filters {
 		display: flex;
 		flex-direction: column;
@@ -142,9 +144,7 @@
 		&_active {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			padding: 30px 20px;
 			gap: 20px;
-			background-color: rgba(0, 0, 0, 0.7);
 		}
 	}
 
@@ -173,7 +173,7 @@
 		color: variables.$black;
 		background-color: variables.$white;;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 20px;
+		padding: 40px 20px;
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
@@ -333,9 +333,7 @@
 	}
 
 	@media (max-width: variables.$vp-768) {
-		&__wrapper {
-			padding: 10rem 1rem 15rem;
-		}
+		padding: 150px 0 100px;
 
 		&__filters {
 			align-items: center;

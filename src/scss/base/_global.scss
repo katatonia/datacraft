@@ -10,7 +10,6 @@ html, body {
     scroll-behavior: smooth;
     background-color: variables.$black;
     color: variables.$white;
-    overflow-x: hidden;
     scrollbar-width: none;
 
     @media (max-width: variables.$vp-768) {

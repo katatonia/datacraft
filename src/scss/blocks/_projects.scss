@@ -22,13 +22,13 @@
 		align-items: center;
 		position: relative;
 		padding: 100px 40px;
-		gap: 40px;
+		column-gap: 40px;
+		row-gap: 20px;
 		background-color: rgba(0, 0, 0, 0.7);
 	}
 
 	@media (max-width: variables.$vp-1366) {
 		&__list {
-			gap: 30px;
 			padding: 40px 20px;
 		}
 	}
@@ -36,10 +36,6 @@
 	@media (max-width: variables.$vp-768) {
 		&__link {
 			width: 100px;
-		}
-
-		&__list {
-			gap: 20px;
 		}
 	}
 }

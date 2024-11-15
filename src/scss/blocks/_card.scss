@@ -1,10 +1,16 @@
 @use "base/variables";
 
 .card {
+	padding: 200px 0 100px;
+
+	&__wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 	&__grid {
 		display: grid;
 		color: variables.$white;
-		grid-template-columns: minmax(350px, 500px) 1fr;
+		grid-template-columns: minmax(350px, 400px) 1fr;
 		gap: 35px;
 		padding: 40px 30px;
 		background-color: rgba(1, 1, 1, 0.7);
@@ -52,7 +58,7 @@
 	}
 
 	&__desc {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	&__beer-desc {
@@ -63,37 +69,44 @@
 
 	&__style-list {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 20px;
-		align-items: stretch;
-		justify-content: space-between;
+		flex-direction: column;
+		row-gap: 15px;
+		width: 100%;
 
 		li {
-			display: flex;
-			flex-direction: column;
-			width: 48%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: flex-end;
+			column-gap: 5px;
 		}
 	}
 
 	&__style-list-title {
-		padding: 10px;
 		color: #fff;
-		border-bottom: 1px solid white;
+		position: relative;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: variables.$white;
+		}
 	}
 
 	&__style-list-text {
-		padding: 10px 10px 20px;
-		background-color: rgba(255, 255, 255, 0.2);
 		height: 100%;
-		font-size: 0.8889rem;
+		display: flex;
+		align-items: flex-end;
 	}
 
 	&__beer-profile {
 		display: flex;
 		font-size: 2rem;
 		justify-content: center;
-		margin: 20px 0;
+		margin: 40px 0;
 	}
 
 	&__beer-profile-item {
@@ -145,7 +158,7 @@
 
 	&__rate-btn {
 		padding: 10px;
-		border: 1px solid variables.$white;;
+		border: 1px solid variables.$white;
 	}
 
 	&__bottom {
@@ -186,6 +199,8 @@
 	}
 
 	@media (max-width: variables.$vp-768) {
+		padding: 150px 0 100px;
+
 		&__grid {
 			gap: 20px;
 			grid-template-columns: minmax(260px, 1fr);
@@ -194,10 +209,6 @@
 		&__beer-profile-item {
 			justify-content: center;
 			flex-direction: column;
-		}
-
-		&__desc {
-			text-align: center;
 		}
 
 		&__beer-desc {

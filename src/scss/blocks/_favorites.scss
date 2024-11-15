@@ -1,14 +1,16 @@
 @use "base/variables";
 
 .favorites {
+	padding: 200px 0 100px;
+
 	&__title {
-		font-size: 24px;
+		font-size: 40px;
 		margin-bottom: 10px;
 		padding: 7px;
-		background-color: rgba(0, 0, 0, 0.7);
 		text-transform: uppercase;
 		text-align: left;
-		font-weight: 500;
+		font-weight: 600;
+		border-bottom: 2px solid white;
 	}
 
 	&__page {
@@ -17,9 +19,7 @@
 		&_active {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			padding: 30px 20px;
 			gap: 20px;
-			background-color: rgba(0, 0, 0, 0.7);
 		}
 	}
 
@@ -42,7 +42,7 @@
 	&__desc {
 		background-color: variables.$white;
 		color: variables.$black;
-		padding: 20px;
+		padding: 40px 20px;
 		width: 100%;
 
 		h2 {
@@ -55,7 +55,7 @@
 		max-width: 200px;
 		width: 100%;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 30px;
 	}
 
 	&__like {
@@ -83,11 +83,13 @@
 		}
 
 		&__title {
-			font-size: 18px;
+			font-size: 30px;
 		}
 	}
 
 	@media (max-width: variables.$vp-768) {
+		padding: 150px 0 100px;
+
 		&__page {
 			grid-template-columns: 1fr;
 		}
